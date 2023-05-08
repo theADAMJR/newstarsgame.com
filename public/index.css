@@ -151,3 +151,22 @@ footer {
         transform: scale(1);
     }
 }
+
+/* short screens */
+@media (max-height: 550px) {
+    footer {
+        display: none;
+    }
+}
+
+@media (max-height: 575px) {
+    footer {
+        bottom: -16% !important;
+    }
+}
+
+@media (max-height: 650px) {
+    footer {
+        bottom: -12%;
+    }
+}
