@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+.ir {
+    display: block;
+    overflow: visible;
+    padding: 0 0 100%;
+    position: relative;
+    height: 0;
+    width: 100%;
+}
+
+.ir>* {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+html,
+body {
+    background: #0e1925;
+}
+
+html {
+    font-size: .625em;
+}
+
+.soc {
+    display: block;
+    font-size: 0;
+    list-style: none;
+    margin: 0 auto;
+    padding: 4.8rem;
+    text-align: center;
+    width: 110rem;
+    max-width: 100%;
+}
+
+.soc li {
+    display: inline-block;
+    margin: 1.2rem;
+}
+
+.soc a,
+.soc svg {
+    display: block;
+}
+
+.soc a {
+    height: 9.6rem;
+    width: 9.6rem;
+}
+
+.codepen-icon:hover,
+.github-icon:hover,
+.youtube-icon:hover,
+.steam-icon:hover {
+    border-radius: 100%;
+    fill: #0e1925;
+    transform: scale(1.25);
+    transition: background-color .5s, transform .5s ease-out;
+}
+
+.codepen-icon {
+    fill: #d9b526;
+}
+
+.codepen-icon:hover {
+    background: #d9b526;
+}
+
+.github-icon {
+    fill: #26d991;
+}
+
+.github-icon:hover {
+    background: #26d991;
+}
+
+.youtube-icon {
+    fill: #d9266e;
+}
+
+.youtube-icon:hover {
+    background: #d9266e;
+}
+
+.steam-icon {
+    margin-bottom: 12.5px;
+    fill: blue;
+    width: 72px !important;
+    height: 72px !important;
+}
+
+.steam-icon:hover {
+    background: blue;
+}

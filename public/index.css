@@ -1,0 +1,98 @@
+body,
+.parallax-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0;
+    background-color: #050219;
+}
+
+.parallax-foreground {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 100%;
+    height: 100%;
+    background-image: url("./Purple/Layer 1/Space Background 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.parallax-midground {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 125%;
+    height: 125%;
+    background-image: url("./Purple/Layer 2/Space Background 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.parallax-background {
+    position: absolute;
+    top: -25px;
+    left: -25px;
+    width: 110%;
+    height: 110%;
+    background-image: url("./Purple/Layer 3/Space Background 1.png");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+#wishlist {
+    position: absolute;
+    top: 50vh;
+    left: 35vw;
+}
+
+#logo,
+#icon {
+    position: absolute;
+    top: -150%;
+}
+
+#logo {
+    z-index: 1;
+}
+
+#icon {
+    width: 172px;
+    left: 35%;
+    top: -100%;
+
+    -webkit-animation: spin 42s linear infinite;
+    -moz-animation: spin 42s linear infinite;
+    animation: spin 42s linear infinite;
+}
+
+footer {
+    right: -21%;
+    bottom: -7.5%;
+    position: absolute;
+    z-index: 10;
+    transform: scale(.6);
+}
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
