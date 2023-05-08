@@ -10,7 +10,8 @@ function moveItem(e, parallaxItem, str = 1) {
     parallaxItem.style.transform = `translate(${xPos}px, ${yPos}px)`;
 }
 
-const getRandom = () => Math.floor(Math.random() * 3) + 1;
+const backgroundCount = 10;
+const getRandom = () => Math.floor(Math.random() * backgroundCount) + 1;
 document.querySelector('.parallax-background').style.backgroundImage = `url("./public/Purple/Layer 3/Space Background ${getRandom()}.png")`;
 document.querySelector('.parallax-midground').style.backgroundImage = `url("./public/Purple/Layer 2/Space Background ${getRandom()}.png")`;
 document.querySelector('.parallax-foreground').style.backgroundImage = `url("./public/Purple/Layer 1/Space Background ${getRandom()}.png")`;
