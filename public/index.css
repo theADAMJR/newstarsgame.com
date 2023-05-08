@@ -71,11 +71,31 @@ body,
 }
 
 footer {
-    right: -21%;
-    bottom: -7.5%;
+    right: -22.5%;
+    bottom: -8%;
     position: absolute;
     z-index: 10;
-    transform: scale(.6);
+    transform: scale(.5);
+}
+
+.left {
+    position: absolute;
+    bottom: 1px;
+    left: 1px;
+}
+
+.left a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 85%;
+    letter-spacing: -.25;
+    color: #6C4198;
+    text-decoration: none;
+}
+
+.left a:hover {
+    text-decoration: underline;
+    color: white;
+    transition: .2s ease-in-out;
 }
 
 @-moz-keyframes spin {

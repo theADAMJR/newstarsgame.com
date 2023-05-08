@@ -71,36 +71,36 @@ html {
 }
 
 .codepen-icon {
-    fill: #d9b526;
+    fill: #6C4198;
 }
 
 .codepen-icon:hover {
-    background: #d9b526;
+    background: #6C4198;
 }
 
 .github-icon {
-    fill: #26d991;
+    fill: #6C4198;
 }
 
 .github-icon:hover {
-    background: #26d991;
+    background: #6C4198;
 }
 
 .youtube-icon {
-    fill: #d9266e;
+    fill: #6C4198;
 }
 
 .youtube-icon:hover {
-    background: #d9266e;
+    background: #6C4198;
 }
 
 .steam-icon {
     margin-bottom: 12.5px;
-    fill: blue;
+    fill: #6C4198;
     width: 72px !important;
     height: 72px !important;
 }
 
 .steam-icon:hover {
-    background: blue;
+    background: #6C4198;
 }
