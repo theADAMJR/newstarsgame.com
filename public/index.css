@@ -11,7 +11,7 @@ body,
 .parallax-foreground {
     position: absolute;
     top: -25px;
-    left: -25px;
+    left: -40px;
     width: 110%;
     height: 110%;
     background-image: url("./Purple/Layer 1/Space Background 1.png");
