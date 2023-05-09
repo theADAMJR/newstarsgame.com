@@ -1,7 +1,7 @@
 document.addEventListener('mousemove', function (e) {
-    moveItem(e, document.querySelector('.parallax-foreground'), 20);
-    moveItem(e, document.querySelector('.parallax-midground'), 40);
-    moveItem(e, document.querySelector('.parallax-background'), 80);
+    moveItem(e, document.querySelector('.parallax-foreground'), 15);
+    moveItem(e, document.querySelector('.parallax-midground'), 30);
+    moveItem(e, document.querySelector('.parallax-background'), 60);
 });
 
 function moveItem(e, parallaxItem, str = 1) {
