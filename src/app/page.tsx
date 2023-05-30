@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="parallax-container">
+    <main className="flex min-h-screen flex-col items-center justify-between">
+      <div className="parallax-container" style={{ height: '100vh' }}>
         <div className="parallax-background"></div>
         <div className="parallax-midground"></div>
         <div className="parallax-foreground"></div>
