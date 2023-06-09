@@ -1,20 +1,26 @@
-export default function Home() {
+import { marked } from 'marked';
+import './changelog.css';
+
+export const metadata = {
+  title: 'New Stars - Changelog',
+  description: 'Expand your own galactic empire across new stars, advance technologies, and challenge great alien powers in this immersive 4X grand strategy game. Build sci-fi colonies, and starbases to gather scarce resources. Explore a unique galaxy full of secrets, great perils, and infinite possibilities.',
+}
+
+export default async function Home() {
+  const response = await fetch('http://localhost:3000/md/changelog.md', { cache: 'no-store' });
+  const text = await response.text();
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="parallax-container" style={{ height: '100vh' }}>
-        <div className="parallax-background"></div>
-        <div className="parallax-midground"></div>
-        <div className="parallax-foreground"></div>
+    <main className="min-h-screen pb-40">
+      <header className='py-20'>
+        <h1 className='text-center'>New Stars - Changelog</h1>
+      </header>
+
+      <div className='flex justify-center items-center'>
+        <div className='px-10 my-10'
+          dangerouslySetInnerHTML={{ __html: marked(text) }} />
       </div>
 
-      <section id="wishlist" className="container">
-        <div id="logo-container">
-          <img id="icon" src="/img/star-satellites.svg" alt="Star satellites icon - by Lorc under CC-BY-3.0"
-            title="Star satellites icon - by Lorc under CC-BY-3.0" />
-          <img id="logo" src="/img/logo-transparent.png" alt="New Stars Logo Transparent" />
-        </div>
-        <iframe src="https://store.steampowered.com/widget/2231270/" frameBorder="0" width="646" height="190"></iframe>
-      </section>
       <div className="left">
         <a href="https://game-icons.net/" target="_blank">&copy; Star satellites icon - by Lorc under CC-BY-3.0</a>
       </div>
@@ -68,7 +74,6 @@ export default function Home() {
           </li>
         </ul>
       </footer>
-      <script src="/js/index.js" defer />
     </main>
   );
 }

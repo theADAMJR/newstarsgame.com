@@ -1,5 +1,6 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+import './globals.css';
+import './theme.css';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -23,11 +24,8 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/index.css" />
         <link rel="stylesheet" href="/css/footer.css" />
         <link rel="shortcut icon" href="/star-satellites.svg" type="image/x-icon" />
-        <script src="/js/index.js" defer />
 
         {/* Primary Meta Tags */}
-        <title>New Stars - Galactic 4X Grand Strategy Game</title>
-        <meta name="title" content="New Stars - Galactic 4X Grand Strategy Game" />
         <meta name="description" content="Expand your own galactic empire across new stars, advance technologies, and challenge great alien powers in this immersive 4X grand strategy game. Build sci-fi colonies, and starbases to gather scarce resources. Explore a unique galaxy full of secrets, great perils, and infinite possibilities." />
 
         {/* Open Graph / Facebook */}
