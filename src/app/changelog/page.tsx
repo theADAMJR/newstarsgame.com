@@ -3,13 +3,10 @@ import './changelog.css';
 
 export const metadata = {
   title: 'New Stars - Changelog',
-  description: 'Expand your own galactic empire across new stars, advance technologies, and challenge great alien powers in this immersive 4X grand strategy game. Build sci-fi colonies, and starbases to gather scarce resources. Explore a unique galaxy full of secrets, great perils, and infinite possibilities.',
 }
 
-export default async function Home() {
-  const response = await fetch('http://localhost:3000/md/changelog.md', { cache: 'no-store' });
-  const text = await response.text();
-
+export default function Home() {
+  const changelog = require('./changelog.md').default;
   return (
     <main className="min-h-screen pb-40">
       <header className='py-20'>
@@ -18,7 +15,7 @@ export default async function Home() {
 
       <div className='flex justify-center items-center'>
         <div className='px-10 my-10'
-          dangerouslySetInnerHTML={{ __html: marked(text) }} />
+          dangerouslySetInnerHTML={{ __html: marked(changelog, { mangle: false, headerIds: false }) }} />
       </div>
 
       <div className="left">
@@ -61,7 +58,7 @@ export default async function Home() {
             </a>
           </li>
           <li>
-            <a className="steam-icon steam" href="https://steamcommunity.com/id/adamjr" target="_blank" title="Steam">
+            <a className="steam-icon steam" href="https://store.steampowered.com/app/2231270" target="_blank" title="Steam">
               <div className="ir">
                 <svg viewBox="0 0 256 259" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
