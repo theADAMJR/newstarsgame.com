@@ -1,7 +1,7 @@
 # newstarsgame.com
 The frontend website for the 4X galactic strategy game - New Stars.
 
-<img src="./public/front-page.png" alt="Front page screenshot (Desktop)" width="75%"> <img src="./public/front-page-mobile.jpg" alt="Front page screenshot (Mobile)" width="23.75%"> 
+<img src="./public/img/front-page.png" alt="Front page screenshot (Desktop)" width="75%"> <img src="./public/img/front-page-mobile.jpg" alt="Front page screenshot (Mobile)" width="23.75%"> 
 
 Check out [New Stars on Steam](https://bit.ly/newstarsgame).
 
