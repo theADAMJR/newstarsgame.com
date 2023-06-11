@@ -15,6 +15,7 @@ export default function Home() {
 
       <div className='flex justify-center items-center'>
         <div className='px-10 my-10'
+          style={{ maxWidth: '750px' }}
           dangerouslySetInnerHTML={{ __html: marked(changelog, { mangle: false, headerIds: false }) }} />
       </div>
 

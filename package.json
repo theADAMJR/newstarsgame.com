@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "predeploy": "echo newstarsgame.com > ./build/CNAME && echo '' > ./build/.nojekyll",
-    "deploy": "npm run predeploy && gh-pages -d build",
+    "deploy": "npm run predeploy && gh-pages -d build -t true",
     "start": "next dev",
     "lint": "next lint"
   },
