@@ -8,7 +8,7 @@ The galaxy comes to life: Adapted entities will bring new challenges and rewards
 
 ### Added
 - **Tutorial System**: A new tutorial system has been added to help new players familiarize themselves with the game and the genre.
-- **Space Entities**: Unpredictable creatures of the void, including Void Squids, Plasma Squids, and Small Squids, have been introduced. Each entity offers unique challenges and rewards.
+- **Space Entities**: Unpredictable creatures of the void, including Void Squids, Plasma Squids, and Small Squids, have been introduced. Each entity offers unique challenges and rewards (note: rewards are not yet implemented).
 - **New website**: newstarsgame.com now displays the changelog for public New Stars updates.
 
 ### Changed
