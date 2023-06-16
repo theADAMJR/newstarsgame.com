@@ -55,7 +55,7 @@ export default function Home() {
             </a>
           </li>
           <li>
-            <a className="steam-icon steam" href="https://steamcommunity.com/id/adamjr" target="_blank" title="Steam">
+            <a className="steam-icon steam" href="https://store.steampowered.com/app/2231270" target="_blank" title="Steam">
               <div className="ir">
                 <svg viewBox="0 0 256 259" version="1.1" xmlns="http://www.w3.org/2000/svg"
                   xmlnsXlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid">
