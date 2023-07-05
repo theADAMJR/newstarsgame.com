@@ -1,11 +1,19 @@
+import Link from 'next/link';
+
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between">
-      <div className="parallax-container" style={{ height: '100vh' }}>
+      <div className="overflow-hidden parallax-container" style={{ height: '100vh' }}>
         <div className="parallax-background"></div>
         <div className="parallax-midground"></div>
         <div className="parallax-foreground"></div>
       </div>
+
+      <nav className='items-center justify-center gap-x-4 text-3xl'>
+        <Link href="/" className='px-5'>Home</Link>
+        <Link href="/roadmap" className='px-5'>Roadmap</Link>
+        <Link href="/changelog" className='px-5'>Changelog</Link>
+      </nav>
 
       <section id="wishlist" className="container">
         <div id="logo-container">

@@ -5,7 +5,7 @@ body,
     height: 100%;
     margin: 0;
     background-color: #050219;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .parallax-foreground {
@@ -64,6 +64,12 @@ body,
     -webkit-animation: spin 69s linear infinite;
     -moz-animation: spin 69s linear infinite;
     animation: spin 69s linear infinite;
+}
+
+nav {
+    top: 2.5%;
+    position: absolute;
+    z-index: 10;
 }
 
 footer {
