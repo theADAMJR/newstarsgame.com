@@ -99,9 +99,6 @@ Start with intel of 3 nearby empire capitals.
 
 ## Changed
 
-### Improved Nebula Skybox
-Now billboard nebula particles for systems with environment nebula are replaced with a limitless nebula overlay. Your eyes and GPU can now rest easy.
-
 ### Tweaks
 - **Special resources are more equally distributed across the map.**
     - Void worlds now generate much more often, as antimatter was extremely rare.
