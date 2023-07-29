@@ -10,48 +10,44 @@ The biggest New Stars update is here. It combines two large updates into one. 'I
 ### Interstellar: 8 Playmodes
 
 #### 1. Megacorporations
-> The power of a megacorporation lies not only in economic might but also in their ability to manipulate politics, negotiate lucrative deals, and establish monopolies.
-- **Ability**: ORDER OF BUSINESS (Purchase rights to build on foreign colonies)
-- **Ability**: FORM MONETARY UNION (Gives economic bonuses)
-- **Building**: LOGISTICS OFFICE (Collect foreign system resources)
+- **Ability**: ORDER OF BUSINESS (Purchase rights to build on foreign colonies).
+- **Ability**: FORM MONETARY UNION (Gives economic bonuses).
+- **Building**: LOGISTICS OFFICE (Collect foreign system resources).
 
 #### 2. Peacekeeping Pacifist
-Peacekeeping pacifists assert their influence on others by enforcing their peace plans. They may peacefully interfere in wars by sending their own peacekeeping fleets to protect star systems.
-- **Ability**: GALACTIC HARMONY ENFORCEMENT (Fleets can peacekeep in systems)
-- **Ability**: PEACE CONVENTIONS (Truces last twice as long)
-- **Building**: PEACEKEEPER ACADEMY (Generate positive border friction)
+- **Ability**: GALACTIC HARMONY ENFORCEMENT (Fleets can peacekeep in systems).
+- **Ability**: PEACE CONVENTIONS (Truces last twice as long).
+- **Building**: PEACEKEEPER ACADEMY (Love thy neighbours).
 
 #### 3. Alliance Builder
-The Alliance Builder is a diplomatic powerhouse, specializing in forging alliances, maintaining diplomatic relations, and leveraging collective strength for mutual benefit.
-- **Ability**: UNITE THE GALAXY (Form alliances/unions with clans)
-- **Ability**: FORM DIPLOMATIC UNION (Gives opinion and defensive bonuses)
+- **Ability**: UNITE THE GALAXY (Form alliances/unions with clans).
+- **Ability**: FORM DIPLOMATIC UNION (Gives opinion and defensive bonuses).
+- **Building**: UNITY COUNCIL CHAMBERS (Love thy allies).
 
 #### 4. Cooperative Militarist
-Forging a unique path between cooperation and aggression, the Cooperative Militarist emerges as a formidable force on the galactic stage.
 - **Ability**: A UNITED FRONT (Invite other empires to wars).
-- **Ability**: FORM MARTIAL UNION (Gives leader ability to build union fleet)
+- **Ability**: FORM MARTIAL UNION (Gives leader ability to build union fleet).
+- **Building**: FORGE MATRIX (Ship building on steroids).
 
 #### 5. Hegemonic Subjugator
-A dark and formidable force rises with the advent of the Hegemonic Subjugator.
 - **Ability**: IMPERIAL HOLDINGS (Build on subject colonies).
 - **Ability**: CLAN SERVITUDE (Integrate star clans).
+- **Building**: IMPERIAL CITADEL (Love thy overlord).
 
 #### 6. Xeno Exterminator
-The Xeno Exterminator embodies a relentless and genocidal crusade against all non-native lifeforms in the galaxy.
 - **Ability**: PURGE DOCTIRNE (Raze worlds).
 - **Origin**: SHATTERED WORLD (Spawn with additional military fleet).
+- **Building**: GENE CLEANSING FACILITY (Cleanses sinful aliens).
 
 #### 7. Extreme Isolationist
-In the far reaches of the galaxy, the Extreme Isolationist emerges as a testament to the power of seclusion and self-sufficiency.
 - **Ability**: SOLITUDE IMPERATIVE (Builders can destroy system connections).
 - **Origin**: FORGOTTEN OUTPOST (Start with additional colonist).
-- **Building**: SECLUSION NEXUS (Start with additional colonist).
+- **Building**: SECLUSION NEXUS (Enhance thy colony).
 
 #### 8. Silent State
-- The Silent State wields influence in the galaxy through covert operations and manipulation of behind-the-scenes politics.
 - **Ability**: GALACTIC STEALTH IMPERATIVE (Stealth fleets).
 - **Origin**: SHADOWY NEXUS (Start with intel bonus).
-- **Building**: STEALTH OPERATIONS CENTER (Hide colony from other empires).
+- **Building**: STEALTH OPERATIONS CENTER (Hide thy colony).
 
 ### Interstellar: Unions
 Unions are galactic federations, and allow specialized alliances with their own bonuses.
