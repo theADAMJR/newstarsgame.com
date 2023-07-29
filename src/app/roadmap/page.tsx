@@ -4,10 +4,23 @@ export const metadata = {
   title: 'New Stars - Roadmap',
 }
 
+export function A(params: any)
+{
+  return (
+    <div className="body">
+      <small> {params.children}</small>
+      <div className="d-flex justify-content-between mt-3 controls">
+        <a className="btn btn-outline-danger invisible" href="#">Prev</a>
+        <a className="btn btn-outline-danger" href="#">Next</a>
+      </div>
+    </div>
+  );
+}
+
 // Template: https://codepen.io/AlexVanK/full/qBaeBYV
 export default function Roadmap() {
   return (
-    <div className="bg-dark h-100 w-100 py-4">
+    <div className="h-100 w-100 py-4">
       <div className="d-flex justify-content-center align-items-center flex-column mb-4">
         <h1 className="mb-2 text-white text-center">Infographic Roadmap</h1>
         <p className="w-75 text-white text-center">ES6 — Bootstrap 5.3 — FontAwesome 6.4</p>
@@ -24,13 +37,7 @@ export default function Roadmap() {
               <i className="fa-solid fa-meteor bg-danger" />
               <h6 className="text-uppercase my-3 ps-4">Lorem Ipsum dolor sit Amet</h6>
             </header>
-            <div className="body">
-              <small> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </small>
-              <div className="d-flex justify-content-between mt-3 controls">
-                <a className="btn btn-outline-danger invisible" href="#">Prev</a>
-                <a className="btn btn-outline-danger" href="#">Next</a>
-              </div>
-            </div>
+
           </article>
           <article data-step={2}>
             <header className="d-flex align-items-center text-danger bg-danger bg-opacity-10">
@@ -229,7 +236,7 @@ export default function Roadmap() {
           <article data-step={16}>
             <header className="d-flex align-items-center text-success bg-success bg-opacity-10">
               <i className="fa-solid fa-flag-checkered bg-success display-2 p-4" />
-              <h6 className="text-uppercase my-3 ps-4">Lorem Ipsum dolor sit Amet</h6>
+              <h6 className="text-uppercase my-3 ps-4">Early Access</h6>
             </header>
             <h6 className="text-uppercase my-3 ps-4" />
             <div className="body">

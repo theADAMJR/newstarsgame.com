@@ -5,7 +5,7 @@ body,
     height: 100%;
     margin: 0;
     background-color: #050219;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .parallax-foreground {
