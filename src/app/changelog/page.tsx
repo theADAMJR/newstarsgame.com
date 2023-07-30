@@ -6,7 +6,9 @@ export const metadata = {
 }
 
 export default function Home() {
-  const changelog = require('./changelog.md').default;
+  const changelog = require('./changelog.md').default
+    .replace(/- ([A-Za-z -,]+) ->/gm, "- **$1** ->");
+
   return (
     <main className="min-h-screen pb-40">
       <header className='py-20'>

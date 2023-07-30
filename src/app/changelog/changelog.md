@@ -2,6 +2,47 @@
 <!-- Copyright © 2023 ADAMJR (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 2023.07.30 Closed-Beta "INTERSTELLAR + COBALT"
+Visual and mechanical bug fixes, pacing tweaks, and a few improvements.
+
+### Added
+- Pings -> Now saveable and loadable with saves.
+- Starbase Panel -> Tooltips for designation including cost, and error messages.
+- Ubiquity -> Fleet combat engangement range indicator, while military fleet is selected.
+
+### Changed
+- Battle Panel -> Now appears on right side of screen.
+    - This is to avoid obstructing view of animated fighting.
+- Tech -> Cost now accounts for logistical modifier.
+    - Techs can be researched more quickly on faster speeds.
+- Colonies -> Starts with 2 food (from capital building), 1 building, and 1 population.
+    - This allows colonies to grow to 8 population, without needing additional farms.
+- Colonies -> Pop growth rate reduced by 50% when there is no free housing.
+- Starbases -> Marginal cost of claiming additional starbases reduced from 10 to 5 power.
+- Game Duration -> Games can now last 25, 36, 50, 75, and 100 years depending on selected duration.
+- Ships, Buildings -> Build cost is now scaled by logistical modifier.
+
+### Fixed
+- Colony Panel -> Tooltips now shows building production.
+- Ubiquity -> Combat engagement range is no longer extremely limited.
+- Save Game -> Game should now save correctly with game events.
+- Fleet -> Stack now updates properly when fleet is destroyed/disbanded.
+- Seamless -> Empire claims with darker empire colours are now brighter and easier to see.
+- Starbase Panel -> Focus icon now shows affordance for what is enabled.
+- Colony -> Population growth no longer goes below 0 when population at 1.
+<!-- - Battle panel -> Combatant icons appear too small. -->
+- Fleet Panel -> Current order text no longer shows blank text description when there is one order remaining.
+- Colony Panel -> Focus no longer appears empty for science focus.
+- Ubiquity -> Starbase label HUD no longer displays name twice.
+<!-- - Ubiquity -> Starbase label HUD now shows background colour. -->
+- Ubiquity -> Name HUD no longer appears to clip inside starbase structures.
+- Starbase Designate -> Tooltips have been remastered and no longer have too much spacing.
+
+### Removed
+- Tips -> Unnecessary details from tips panel are now gone.
+
+---
+
 ## 2023.07.29 Closed-Beta "INTERSTELLAR + COBALT"
 The biggest New Stars update is here. It combines two large updates into one. 'Interstellar' is for the 8 new playmodes, special abilities, and unique buildings. 'Cobalt' is for the new futurized and animated UI.
 
