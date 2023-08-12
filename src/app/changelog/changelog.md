@@ -133,8 +133,9 @@ Visual and mechanical bug fixes, pacing tweaks, and a few improvements.
 - Colony -> Population growth no longer goes below 0 when population at 1.
 - Fleet Panel -> Current order text no longer shows blank text description when there is one order remaining.
 - Colony Panel -> Focus no longer appears empty for science focus.
-- Ubiquity -> Starbase label HUD no longer displays name twice.
-- Ubiquity -> Name HUD no longer appears to clip inside starbase structures.
+- Ubiquity:
+    -> Starbase label HUD no longer displays name twice.
+    -> Name HUD no longer appears to clip inside starbase structures.
 - Starbase Designate -> Tooltips have been remastered and no longer have too much spacing.
 
 ### Removed
