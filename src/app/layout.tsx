@@ -1,5 +1,6 @@
 import './globals.css';
 import './theme.css';
+import '@/components/scrollbar.css';
 import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] })
@@ -23,7 +24,7 @@ export default function RootLayout({
 
         <link rel="stylesheet" href="/css/index.css" />
         <link rel="stylesheet" href="/css/footer.css" />
-        
+
         {/* Primary Meta Tags */}
         <meta name="description" content="Expand your own galactic empire across new stars, advance technologies, and challenge great alien powers in this immersive 4X grand strategy game. Build sci-fi colonies, and starbases to gather scarce resources. Explore a unique galaxy full of secrets, great perils, and infinite possibilities." />
 

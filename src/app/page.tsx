@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import Navbar from '@/components/navbar';
 
 export default function Home() {
   return (
@@ -9,11 +9,7 @@ export default function Home() {
         <div className="parallax-foreground"></div>
       </div>
 
-      <nav className='items-center justify-center gap-x-4 text-3xl'>
-        <Link href="/" className='px-5'>Home</Link>
-        {/* <Link href="/roadmap" className='px-5'>Roadmap</Link> */}
-        <Link href="/changelog" className='px-5'>Changelog</Link>
-      </nav>
+      <Navbar />
 
       <section id="wishlist" className="container">
         <div id="logo-container">
