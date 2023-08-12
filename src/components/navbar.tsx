@@ -5,7 +5,7 @@ export default function Navbar() {
     return (
         <div className="flex flex-col items-center justify-between" style={{
             position: 'absolute',
-            top: '55px',
+            top: '32px',
             right: '50%'
         }}>
             <nav className='items-center justify-center gap-x-4 text-3xl'>

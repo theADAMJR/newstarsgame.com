@@ -10,7 +10,7 @@ Part one of the cool animations update. There have been a lot of bug fixes, twea
     - Unlocked after researching light cruisers.
 - Seamless -> Added galaxy map fleet order animations.
 - Ubiquity -> Added Asteroid fields.
-- **Ubiquity Animations**:
+- Ubiquity Animations:
     - Builder fleet build starbase animation.
     - Stardock build fleet animation.
     - Extreme isolationist vaporize hyperlane animation.
@@ -18,33 +18,33 @@ Part one of the cool animations update. There have been a lot of bug fixes, twea
     - Fleet FTL VFX.
 
 ### Improved
-- Ubiquity
-    - Improved starbase textures have been upscaled from `2048x2048` to `8192x8192`.
-    - Improved military ship section textures have been upscaled from `2048x2048` to `8192x8192`.
+- Ubiquity:
+    - Starbase textures have been upscaled from `2048x2048` to `8192x8192`.
+    - Military ship section textures have been upscaled from `2048x2048` to `8192x8192`.
     - VFX is now scaled by time.
         - Ship trails and explosions can now be stopped mid-action with simulated time.
         - Ship building is now a higher quality experience.
-- Ship builder -> Improved selection indicator is now animated.
-- Combat System -> Improved closest ship to will be attacked, instead of random ships.
-    - Distance is now a factor in battles.
-- Cobalt -> Play UI -> View origin details on hover.
+- Ship Builder -> Selection indicator is now animated.
+- Combat System -> Closest ship is preferred in target selection, instead of random ships.
+- Cobalt -> Play UI
+    - View origin details on hover.
+    - View animated 3D world type on hover.
 - Fleet Panel -> Toggle stealth mode affordance (toggle primary color).
-- Starbase panel -> Designate -> Cannot tell which option is selected.
-- Fleet -> Icons should be upscaled 4x.
+- Starbase Panel -> Designate -> Can now tell which option is selected.
+- Fleet -> Ship icons have been upscaled from `128x128` to `512x512`.
 
 ### Tweaked
 - All playable playmodes now have 2 modifiers each.
-    - -500 opinion for xeno exterminator
-    - -250 opinion for extreme isolationist
+    - -500 opinion for Xeno Exterminator.
+    - -250 opinion for Extreme Isolationist.
 - Techs -> Ship type techs now unlock a new level of modules.
 - Ship stats have been changed.
     - All ship presets start with default turrets.
     - Larger ships are faster as they start with more powerful engines.
 - Fleet Capacity Tech -> Now gives `+5` capacity, instead of `+2`, and is more common.
-- Reduced starbase damage to +10 per level, starting from 10, for all starbase types.
-- Tech -> Claim cost -> Is now 60 on online and 30 on standard.
-- Tech -> Stargate tech is now much rarer.
-- Claim Cost -> 30 on online and 60 on standard speed.
+- Starbase:
+    -> Combat -> Reduced starbase damage to +10 per level, starting from 10, for all starbase types.
+    -> Claim cost -> Is now 30 on online and 60 on standard speed.
 - Opinion -> `200` opinion required for friendly attitude, instead of `250`. 
 - Attitude required for forming business partnerships is now `Open`, instead of `Friendly`.
     - It's much easier to form business partnerships now.
@@ -54,28 +54,30 @@ Part one of the cool animations update. There have been a lot of bug fixes, twea
 - Starbase Designation Cost -> Should be 500 on standard, 250 on online.
 - Fleet Distort Tech -> Now rolled after heavy cruisers and is harder to roll.
 - AI colonies -> Should build food buildings when little food.
-- Tech base cost -> Set to 500 on standard, 250 on online.
-- Build explorer -> Should take 60 days on normal speed and 30 on online speed.
-- Gunboat cost -> Should be 100 metals on standard, 50 on online.
-- Purchase business rights -> Should cost 500 on online and 1000 on standard speed.
+- Tech -> Base Cost -> Set to 500 on standard, 250 on online.
+- Build Explorer -> Should take 60 days on normal speed and 30 on online speed.
+- Gunboat Cost -> Should be 100 metals on standard, 50 on online.
+- Purchase Business Rights -> Should cost 500 on online and 1000 on standard speed.
 - Colonists -> Should cost 300 food and 300 metals on standard speed, and half on online speed.
 
 ### Fixed
-- Colony panel -> Could not upgrade capital building.
-- Cobalt -> Main menu -> Typing in input causes menu to change.
-- Cobalt -> Main menu -> Game duration summary shows UI scale summary.
-- Cobalt -> Audio sliders -> SFX volume slider now changes UI SFX audio volume.
-- Ubiquity -> Starbase label HUD now shows player background color.
-- Ubiquity -> Starbase label -> Shows transparent background image.
-- Fleet panel -> Current order text does not sometimes show.
-- Ubiquity -> Combat not triggering when within radius of enemy.
+- Main Menu:
+    -> Typing in input causes menu to change.
+    -> Game duration summary shows UI scale summary.
+- Ubiquity:
+    -> Starbase label HUD -> Does not show player background color.
+    -> Starbase label -> Shows transparent background image.
+    -> Combat -> Not triggering when within radius of enemy.
+- Settings -> Audio sliders -> SFX volume slider now changes UI SFX audio volume.
+- Colony Panel -> Could not upgrade capital building.
+- Fleet Panel -> Current order text does not sometimes show.
 - Built -> UI scale sometimes resets to .25.
-- Battle panel -> Combatant icons are now the correct size.
+- Battle Panel -> Combatant icons are now the correct size.
 - Starbase label -> Click wormhole icon -> Does not work for whiteholes.
-- Hyperlanes appearing over stars.
-- Fleet actions -> 'e' button to interact conflicts with 'e' to enter/exit system.
+- Hyperlanes -> Overlaps over stars.
+- Fleet Actions -> 'e' button to interact conflicts with 'e' to enter/exit system.
 - Create fleet -> Does not always update fleet icon on creation when Ubiquity is open.
-- AI agendas -> Peacekeeper agendas don't account for peaceful clans.
+- AI Agendas -> Peacekeeper agendas don't account for peaceful clans.
 - Ubiquity -> Stars sometimes spawn inside each other.
 - Fleet actions -> Wormholes -> Fleet action icon only shows in systems without wormhole.
 ...and more.
@@ -85,15 +87,18 @@ Some features have been removed to make way for improvements or to prevent bugs 
 
 - Techs -> Ship Section -> Mark 2-5.
 - Wiki Panel
-    - Required a lot of maintenance for something that wasn't used.
-    - Will be replaced with tips system, which will be expanded instead.
-    - Game mechanics should not require a wiki, but concise and useful tutorials.
+    -> Required a lot of maintenance for something that wasn't used.
+    -> Will be replaced with tips system, which will be expanded instead.
+    -> Game mechanics should not require a wiki, but concise and useful tutorials.
 - Star-gates
-    - Not sure if it worked as expected.
-    - Not very useful until endgame.
-    - Could get re-added at some point but removed for now.
+    -> Not sure if it worked as expected.
+    -> Not very useful until endgame.
+    -> Could get re-added at some point but removed for now.
 - Main Menu -> Load Last Save (for now).
 - Main Menu -> Quick Play (for now).
+
+### More Info
+- [New Stars DevLog #14 - Fleet Formations, Asteroids, Build Animations, and more.](https://store.steampowered.com/news/app/2231270/view/3644026308760167587)
 
 ---
 

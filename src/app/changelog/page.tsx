@@ -8,13 +8,16 @@ export const metadata = {
 
 export default function Home() {
   const changelog = require('./changelog.md').default
-    .replace(/- ([A-Za-z -,]+) ->/gm, "- **$1** ->");
+    .replace(/- ([A-Za-z -,]+) ->/gm, "- **$1** ->")
+    .replace(/- ([A-Za-z -,]+):/gm, "- **$1**:")
+    .replace(/    -> ([A-Za-z -,]+) ->/gm, "    -> **$1** ->")
+    .replace(/    ->/gm, "    -");
 
   return (
     <main className="min-h-screen pb-40">
       <Navbar />
 
-      <header className='py-20 pt-60'>
+      <header className='py-20 pt-40'>
         <h1 className='text-center'>New Stars - Changelog</h1>
       </header>
 
