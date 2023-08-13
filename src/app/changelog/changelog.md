@@ -27,7 +27,7 @@ A patch update with major bug fixes.
 - Fleet builder -> Building animation zooms in and out.
 - Union Fleet Capacity -> Does not update when building a union fleet.
 - Fleet Split -> Creates broken empty fleet.
-- Fleet -> split -> gives speed 0 for crimson ships
+- Fleet -> Split -> Resets ship speed for some ships.
 - Business -> Cannot build on colony after purchasing rights.
 
 ---
