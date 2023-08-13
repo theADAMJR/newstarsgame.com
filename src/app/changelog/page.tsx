@@ -8,9 +8,9 @@ export const metadata = {
 
 export default function Home() {
   const changelog = require('./changelog.md').default
-    .replace(/- ([A-Za-z -,]+) ->/gm, "- **$1** ->")
-    .replace(/- ([A-Za-z -,]+):/gm, "- **$1**:")
-    .replace(/    -> ([A-Za-z -,]+) ->/gm, "    -> **$1** ->")
+    .replace(/- ([A-Za-z \-,]+) ->/gm, "- **$1** ->")
+    .replace(/- ([A-Za-z \-,]+):/gm, "- **$1**:")
+    .replace(/    -> ([A-Za-z \-,]+) ->/gm, "    -> **$1** ->")
     .replace(/    ->/gm, "    -");
 
   return (

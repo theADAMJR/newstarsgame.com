@@ -6,9 +6,8 @@
 A patch update with major bug fixes.
 
 ### Improved
-- Player claims now show empire primary colour.
-- Fleet now has a separate map icon for union fleets.
-- Added 2 new ship sizes - Large and Huge.
+- Fleet -> Union fleets now have a separate map icon.
+- Ships -> Added 2 new ship sizes - Large and Huge.
     - Ship sizes are now: Tiny, Small, Medium, Large, Huge.
     - Each military ship type now respectively takes up 1, 2, 3, 4, and 5 ship capacity.
     - It was 1, 1, 2, 2, 3 previously.
