@@ -23,7 +23,7 @@ A patch update with major bug fixes.
 - Chat Menu -> Does not show the send message button text symbol.
 - Fleet Order Manager -> Spawns fleet in the center of the star system.
 - Fleet Order Manager -> Ubiquity fleet speed is not synced with visualized fleet speed.
-- Fleet Builder -> Building animation zooms in and out.
+- Fleet -> Builder -> Building animation zooms in and out.
 - Union Fleet Capacity -> Does not update when building a union fleet.
 - Fleet -> Split -> Creates broken empty fleet.
 - Fleet -> Split -> Resets ship speed for some ships.
