@@ -2,6 +2,37 @@
 <!-- Copyright © 2023 ADAMJR (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 2023.08.16 Closed-Beta "Celestial" (Part 1)
+Addition of in-game bug reporting, with bug fixes and tweaks.
+
+### Added
+- Bug reporting UI -> Report bugs from in-game.
+
+### Changed
+- Old stars event is now only available for the 'Lost Colony' origin type.
+
+### Improved
+- Fleets -> View same ships of type in galaxy map, as one.
+    - Shows fleets of same function in one stack, sorted by owner.
+    - Reduces perceived size of massive overloaded fleet stacks in star systems.
+
+### Tweaked
+- Tech -> Base cost changed from 250 to 800 on standard speed.
+    - You now have to focus on science buildings to unlock techs.
+
+### Fixed
+- Ubiquity -> Fleet freezes on faster speeds.
+- Ubiquity -> Fleet -> Moves back in ubiquity system while in FTL travel.
+- Ubiquity -> Ship speed is faster when time scale is lower.
+- Cross-scene -> Typing in chat causes camera to move.
+- Seamless -> Has a claim ceiling/border within galaxy itself.
+- Cobalt -> Intro panel -> stretched image.
+- Crimson -> Turrets don't spawn on ships.
+- Celestial -> Asteroid fields have too low lod.
+- Ship builder -> UI turret selection does not update correctly.
+
+---
+
 ## 2023.08.13 Closed-Beta "Celestial" (Part 1)
 A patch update with major bug fixes.
 
