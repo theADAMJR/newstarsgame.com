@@ -2,6 +2,33 @@
 <!-- Copyright © 2023 ADAMJR (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 2023.08.19 Closed-Beta "Celestial" (Part 1)
+Bug fixes, ubiquity visual tweaks, and tip screen tweaks.
+
+### Added
+- Tips -> Research panel tip screen.
+
+### Improved
+- Ubiquity -> Asteroid fields now glow.
+- Ubiquity -> Multi-coloured nebula replaces cloud particles.
+- Tips -> Added sequential tips which move in sequence.
+
+### Fixed
+- Business Partner -> Does not restore when loading the game.
+- Crimson -> Template does not update when preset changes.
+- Ship Builder -> Turrets don't restore and ui is buggy.
+- Business -> Cannot build logistics office on foreign world.
+    - It was displaying buildings that only the colony owner could build.
+- Meet Player -> Space squids remain unmet (they don't threaten any players when unmet).
+- Fleet -> Unmet player fleet in visible system shows as black (should meet player, or not show).
+- Game Event Panel -> Selecting disconnects client.
+- Ubiquity -> Nebula does not appear.
+- Interaction -> Clicking away from fleet keeps other 2 selected.
+- Interaction -> Fleet is considered selected while fleet panel is closed.
+- Battle -> Does not end if player is defeated -> continues attacking unclaimed starbase.
+
+---
+
 ## 2023.08.16 Closed-Beta "Celestial" (Part 1)
 Addition of in-game bug reporting, with bug fixes and tweaks.
 
