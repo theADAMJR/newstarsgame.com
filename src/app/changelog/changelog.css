@@ -67,6 +67,7 @@ ul {
 
 li {
     @apply mb-1;
+    color: #cccccc;
     font-size: 14px;
 }
 
