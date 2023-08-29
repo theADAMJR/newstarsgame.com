@@ -1,6 +1,85 @@
 <!-- New Stars - Changelog. -->
-<!-- Copyright © 2023 ADAMJR (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
+<!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
+
+## 0.0.1b 'Celestial' [2023.08.29]
+First open-beta release. Bug fixes and tips improvements. Further development for Steam multiplayer lobbies and addition of full kick functionality, although multiplayer remains disabled until it becomes playable.
+
+### Added
+- Multiplayer -> Ready up in game lobby menu.
+- Multiplayer -> Kicked from lobby modal.
+- Multiplayer -> Button to leave lobby.
+- Multiplayer -> Main menu lobby member avatar indicators.
+
+### Improved
+- Pause Menu -> Shows map settings in-game.
+- Fleet -> EXP progress bar number indication.
+- Bankrupt Ping -> Tooltip should have info of modifier changes.
+- Save Indicator -> Icon changed to spinning star satellites for icon.
+- Multiplayer -> View steam profile option from party members.
+- Order Progress Bar -> Shows days left.
+
+### Changed
+- Changelog -> Switched to SemVer ~~for rapid deployment~~.
+- Multiplayer -> Disabled multiplayer connections.
+- Multiplayer -> All players can now manually pause the game, but only the host can control time scale.
+- Ship Builder -> Fuel sections now increase regeneration rate.
+- Textures -> Some textures were downscaled to make it quicker to start a game.
+
+### Tweaked
+- Black holes -> Speed reduction changed from `50%` to `25%`.
+- Void Worlds -> Are now twice as rare.
+
+### Fixed
+- Battle -> Retreat crashes client.
+- Endgame Screen -> Does not open but victory music continues to play.
+- Map Generator -> Seed does not always generate same map.
+- Multiplayer -> Client does not generate same map.
+- Multiplayer -> Joining steam lobby does not work.
+- Multiplayer -> Joining steam lobby shows empty username.
+- Multiplayer -> Player presets do not update when joining lobby.
+- Multiplayer -> Player usernames do not update when joining lobby.
+- Ship stats -> Are not balanced.
+- Ubiquity -> Some planets glow too bright.
+
+### Removed
+- Ship Builder -> Mk 6 and 7 sections.
+
+---
+
+## 2023.08.21 Closed-Beta "Celestial" (Part 2)
+
+### Improved
+- Ambient stars now rotate.
+
+### Changed
+- AI -> Silent states will enter stealth mode whenever they are in unclaimed territory.
+    - You will most likely have to go to their territory to meet them.
+- AI -> Fleets will now quantum distort.
+    - Only explorers, and military fleets will do this.
+- AI -> Now ignores stealth fleets.
+- AI -> Military fleets will now ignore concealed worlds.
+    - Concealed enemy worlds will be overlooked by AI as if nothing is there.
+- AI -> Extreme isolationist will now destroy hyperlanes if they are next to an unfriendly neighbour.
+- AI -> Xeno exterminators will now raze worlds whenever they get the chance.
+- Fleet -> Stealth mode is auto-disabled if non-allied territory is entered.
+    - Allied and unclaimed territory allow stealth mode.
+- Combat System:
+    - No longer accounts for distance or numerical advantages.
+    - Random targets are chosen once, and changes if the targeter or target is destroyed.
+
+### Tweaked
+- Stardock -> build audio is too loud and should not have doppler effect
+- Exploration -> time to analyze planet changed from `5` to `8` seconds
+
+### Fixed
+- Reveal All -> cannot see fleets on galaxy map.
+- Player -> Does not save ship turrets correctly.
+- Crimson ship builder -> Correct preset turrets are not placed on ships.
+- Battle -> Error causes battle to freeze.
+- Crimson -> Stats are not applied correctly.
+
+---
 
 ## 2023.08.19 Closed-Beta "Celestial" (Part 1)
 Bug fixes, ubiquity visual tweaks, and tip screen tweaks.
@@ -12,6 +91,7 @@ Bug fixes, ubiquity visual tweaks, and tip screen tweaks.
 - Ubiquity -> Asteroid fields now glow.
 - Ubiquity -> Multi-coloured nebula replaces cloud particles.
 - Tips -> Added sequential tips which move in sequence.
+- Fleet Panel -> Now shows ship size in military headers.
 
 ### Fixed
 - Business Partner -> Does not restore when loading the game.
