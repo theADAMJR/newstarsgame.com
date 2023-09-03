@@ -2,6 +2,79 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 0.1.1b 'Celestial' [2023.09.03]
+Lots of bugs fixes, along with minor improvements.
+
+### Improved
+- Improve: Main Menu -> Difficulty Selector -> Now uses more universal difficulty labels.
+- Improve: Time Manager -> Added more time scale combinations.
+
+### Changed
+- Change: Diplomacy -> Requires allied relations, not just friendly, to have full intel.
+
+### Fixed
+- Fix: Game -> Does not work in Steam offline mode / without connection.
+- Fix: Save Game -> Throws error when saving star system.
+- Fix: Endgame Screen -> Leaderboard does not appear.
+- Fix: Start Menu -> Username is not cropped.
+- Fix: Loading Screen -> Playmode UI shows wrong playmode when loading save.
+- Fix: Tips Panel UI -> Font appears too small and blurred.
+- Fix: Diplomacy Panel -> Relations Grid -> Relationship icons are too hard to understand.
+- Fix: Lens Buttons -> Appears too small.
+- Fix: Pings -> Appears too small.
+- Fix: Time Text -> System time does not update when paused.
+- Fix: Cobalt -> Settings -> Anti-aliasing selector does not work.
+
+*Note: In-game version appears as '0.1.0b' for this update.*
+
+[https://store.steampowered.com/news/app/2390890/view/3682310076410658708](https://store.steampowered.com/news/app/2390890/view/3682310076410658708)
+
+---
+
+## 0.1.0b 'Celestial' [2023.09.02]
+Added black hole VFX, and fixed some annoying bugs.
+
+### Add
+- Ubiquity -> Black holes are now animated and has new VFX.
+
+### Improved
+- Ubiquity -> Environment nebula now has a contiguous skybox.
+
+### Changed
+- UI -> Backgrounds are less explicit.
+- UI -> Borders are now more thin.
+- Saving -> Player preset is now saved with the game.
+
+### Fixed
+- Fix: Camera -> Looking up too fast snaps camera down.
+- Fix: Create Game -> Causes 'memory freeze' (caused by custom system generation issues).
+- Fix: Ubiquity -> Stars sometimes spawn inside each other.
+- Fix: Player Claims -> Does not immediately update resolution when change graphics quality.
+- Fix: Lens Buttons -> Views have no tooltips.
+- Fix: Black Holes -> Highest quality setting appears to have low quality distortion effect.
+- Fix: Seamless -> Black hole is not evident on map.
+
+### Removed
+- System Presets -> Removed temporarily until all bugs surrounding them are fixed.
+
+---
+
+## 0.0.2b 'Celestial' [2023.08.30]
+Bug fixes and tweaks.
+
+### Improved
+- Settings -> Default graphics mode is now based on GPU VRAM instead of CPU cores for higher accuracy.
+
+### Changed
+- Bug Reporting Menu -> Max reports set to 3.
+- UI -> Frames have been removed from panel backgrounds.
+
+### Fixed
+- Fix: Bug Reporting -> Can report more than 5 bugs in one session.
+- Fix: Animated Combat -> Starbase does not shoot at ships.
+
+---
+
 ## 0.0.1b 'Celestial' [2023.08.29]
 First open-beta release. Bug fixes and tips improvements. Further development for Steam multiplayer lobbies and addition of full kick functionality, although multiplayer remains disabled until it becomes playable.
 
