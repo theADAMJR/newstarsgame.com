@@ -2,6 +2,41 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 0.2.0b 'Solace' [2023.09.08]
+Bug fixes and improvement of species avatars, and UI SFX.
+
+### Improved
+- Pings -> Upgraded most ping SFX to use new sci-fi sounds.
+- Species Avatars -> Replaced AI-generated placeholders with human and alien icons.
+- Diplomacy Panel -> Has new sci-fi holographic SFX, instead of a repetitive typewriter sound.
+- Colony Siege -> When colony is occupied, some buildings are demolished.
+
+### Changed
+- Ubiquity -> Asteroid fields no longers spawns in systems with multiple stars.
+
+### Tweaked
+- Game Events -> 'Asteroid Appears' may happen every `25` in-game years instead of `50`.
+
+### Fixed
+- Fix: Ubiquity Inspector -> New black holes don't appear correctly.
+- Fix: Ubiquity -> Cinematic Mode Lens -> Does not hide starbase labels.
+- Fix: Ping -> Does not have click/hover SFX.
+- Fix: Fleet -> Merge and Split -> Duplicates fleets with large numbers (12 gunboats became 14).
+- Fix: Main Menu -> Steam details not displaying.
+- Fix: Fleet -> Splitting fleet with five ships creates a sixth ship.
+- Fix: Fleet -> Merge and Split -> Copies the same name over and over.
+- Fix: Built -> Interaction Manager -> Sometimes visualized hyperlanes remain.
+- Fix: Ubiquity -> Ship branding not working for crimson ships.
+- Fix: Load Save -> Does not work and requires game reload.
+- Fix: Starbase Order Manager -> Designate Dock completed instantly.
+- Fix: Starbase Designation -> Takes no time.
+
+### Removed
+- Remove: Old Avatars -> Replaced with human created avatars.
+    - Note: Previous saves will have empty avatars.
+
+---
+
 ## 0.1.1b 'Celestial' [2023.09.03]
 Lots of bugs fixes, along with minor improvements.
 
@@ -34,7 +69,7 @@ Lots of bugs fixes, along with minor improvements.
 ## 0.1.0b 'Celestial' [2023.09.02]
 Added black hole VFX, and fixed some annoying bugs.
 
-### Add
+### Added
 - Ubiquity -> Black holes are now animated and has new VFX.
 
 ### Improved
