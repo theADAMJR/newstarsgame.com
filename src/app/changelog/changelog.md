@@ -2,6 +2,37 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 0.3.0b 'Solace' [2023.09.13]
+Made diplomacy panel easier to understand and improved research panel visuals, among other bug fixes and improvements.
+
+### Added
+- Diplomacy Panel -> Agendas UI -> Added different icon for each agenda, with info.
+- Diplomacy Panel -> New detailed tooltips for every diplomatic action.
+
+### Improved
+- Ubiquity -> Ships now slow down to rotate towards a target, resulting in much more natural movement.
+- Ability Icons -> Now uses new artwork icons, instead of previous flat icons.
+- Research Panel -> Now uses new artwork icons, instead of previous flat icons.
+- Diplomacy Panel -> Only counts systems with known intel.
+
+### Changed
+- Tech -> Repeatable Starbase Defence -> Changed from `+10%` to `+15%`.
+- AI Players -> AI is now much less likely to spawn in as a non-default origin.
+- Colony -> Intel is based on parent system, not intel of colony owner.
+
+### Fixed
+- Fix: Diplomacy Panel -> SFX goes crazy after a month has passed.
+- Fix: Playmode UI -> Does not display peacekeeping pacifist details correctly.
+- Fix: Trade Panel -> Does not work correctly (caused by issues with internal serializer).
+- Fix: Battle -> Starts battle when not inside combat radius.
+- Fix: Ubiquity -> Ships don't explode when destroyed.
+- Fix: Combat -> Engagement Range -> Does not work.
+- Fix: AI -> Does not designate bases.
+
+*Note: Issues with loading saves may persist, and build version shows incorrect date.*
+
+---
+
 ## 0.2.0b 'Solace' [2023.09.08]
 Bug fixes and improvement of species avatars, and UI SFX.
 
@@ -25,7 +56,7 @@ Bug fixes and improvement of species avatars, and UI SFX.
 - Fix: Main Menu -> Steam details not displaying.
 - Fix: Fleet -> Splitting fleet with five ships creates a sixth ship.
 - Fix: Fleet -> Merge and Split -> Copies the same name over and over.
-- Fix: Built -> Interaction Manager -> Sometimes visualized hyperlanes remain.
+- Fix: Built -> Interaction Manager -> Sometimes visualized hyperlanes remain (occurred: gunboat w/o orders).
 - Fix: Ubiquity -> Ship branding not working for crimson ships.
 - Fix: Load Save -> Does not work and requires game reload.
 - Fix: Starbase Order Manager -> Designate Dock completed instantly.
