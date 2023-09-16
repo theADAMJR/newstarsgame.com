@@ -2,6 +2,52 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 0.4.0b 'Solace' [2023.09.16]
+Bug fixes and improvements, with the addition of improved fleet trails.
+
+### Added
+- Diplomacy Panel -> Species Icon -> Tooltip -> Gives info about climate preference and origin type.
+
+### Improved
+- Alliances -> Share system intel with allies when exploring new systems.
+- Trails -> Use new trail VFX for crimson and non-crimson ships.
+
+### Changed
+- Achievements -> Icons now use improved human-created artwork.
+- Load Save -> Added warning if save version is out of date.
+- Origins -> Special planet origins now spawn with their special resource.
+
+### Fixed
+- Fix: Load Save -> Some saves were not loading correctly due to version compatibility issues. 
+  -> Should also work retroactively with saves from mid-August.
+  -> May enforce version-locking for saves in the future to mitigate save/load problems.
+- Fix: Allies -> Share visibility continues to share visibility, as originally intended.
+- Fix: Built -> Research Panel -> Sometimes becomes temporarily unresponsive.
+- Fix: Business -> Can continue queuing buildings past the slot limit (could not reproduce in tests).
+- Fix: Colony -> Business owner not refunded when order cancelled in a foreign colony.
+- Fix: Defeat Screen -> Does not open when a colony is lost.
+- Fix: Diplomacy Panel -> Leave alliance tooltip shows HTML color text.
+- Fix: Diplomacy Panel -> Opinion tooltip -> Text wrapping not working.
+- Fix: Fleet Detection -> Foreign fleet in visible system should be met instantly.
+- Fix: Load Save -> Does not update the galaxy map.
+- Fix: Load Save -> Save reloads map improperly.
+- Fix: Player claims -> Does not immediately update resolution when changing graphics quality.
+- Fix: Tips Panel -> Species avatar is not applied correctly, causing tips to not work properly.
+- Fix: Ubiquity -> Moving camera too fast moves limitless stars.
+- Fix: Cross-scene -> Start game -> After loading save, loads save instead of scene.
+
+### Tweaked
+- Tweak: Colonists -> Now takes 1 year and small fleets take 60 days to build, on standard speed.
+- Tweak: Colonists -> Now costs 200/200 metals/food on standard speed.
+
+### Deprecated
+- Ship Builder -> Future ship builder bug fixes won't be supported.
+    -> Scope-creep; May remove in the near future and could replace with a simpler system over time.
+    -> Assets are ancient years old and contain almost more lines of code than the rest of the project.
+    -> There are many bugs with the ship builder.
+
+---
+
 ## 0.3.0b 'Solace' [2023.09.13]
 Made diplomacy panel easier to understand and improved research panel visuals, among other bug fixes and improvements.
 
