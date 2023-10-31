@@ -2,6 +2,40 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.0b 'Solace' [2023.10.30]
+> The ship building (and combat) update.
+- A new ship builder has been built from scratch.
+- The combat still needs work but is much more advanced than before.
+
+### Added
+- Add: Solace -> New Ship Builder.
+- Add: Solace -> New Turrets -> 13 turrets have replaced the old 6 turrets.
+- Add: Ubiquity -> Ship -> Healing VFX.
+- Add: Ubiquity -> Ship -> Explosion/Destroyed VFX.
+
+### Improved
+- Improve: Battle Panel -> Retreat button is more visible.
+- Improve: Ubiquity -> Realism -> Camera no longer clips into planets but pushes it away.
+- Improve: Ubiquity -> Realism -> Ships no longer can be directly ordered to clip through planets.
+
+### Tweaked
+- Tweak: Max Planets per System -> Changed from `10` to `8`.
+- Tweak: Max Hyperlanes -> Changed from `6` to `5`.
+- Tweak: Base Hyperlane Density -> Changed from `.3` to `.4`.
+
+### Fixed
+- Fix: Save Game -> Ship presets were not being saved.
+
+### Removed
+- Remove: Old Ship Builder.
+- Remove: Techs -> Previous ship turrets techs were removed.
+- Remove: Party -> User indicators from the main menu UI.
+- Remove: In-game Chat Button -> Until multiplayer is added.
+
+This is the biggest update since 'Interstellar', so not all changes are listed.
+
+---
+
 ## 0.4.0b 'Solace' [2023.09.16]
 Bug fixes and improvements, with the addition of improved fleet trails.
 
@@ -43,7 +77,7 @@ Bug fixes and improvements, with the addition of improved fleet trails.
 ### Deprecated
 - Ship Builder -> Future ship builder bug fixes won't be supported.
     -> Scope-creep; May remove in the near future and could replace with a simpler system over time.
-    -> Assets are ancient years old and contain almost more lines of code than the rest of the project.
+    -> Assets are ancient and contain almost more lines of code than the rest of the project.
     -> There are many bugs with the ship builder.
 
 ---
