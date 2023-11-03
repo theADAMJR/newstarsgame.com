@@ -2,6 +2,28 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.1b 'Solace' [2023.11.03]
+> Some bug fixes.
+
+### Fixed
+- Fix: Cross-scene -> Meet player SFX does not play the correct sound.
+- Fix: Battle -> If a system is exited somehow, the battle in that system continues.
+- Fix: Event panel -> Variables are displayed as placeholders.
+- Fix: Click to rename -> Opens fleet rename for ship rename.
+- Fix: Diplo panel -> Building icon appears over text in the tooltip.
+- Fix: Ping -> Trade request ping shows empty trade.
+- Fix: Pings -> Occur all at once.
+- Fix: Starbase label occupation indicator -> Overlaps with starbase icon.
+- Fix: Built -> Pings -> Meet player -> Plays default SFX.
+- Fix: Ubiquity -> Explosion remnants are visible from outside of the star system.
+- Fix: Solace -> Combat -> Huge bullet VFX should not appear with gravity.
+- Fix: Solace -> Combat -> Clicking cancels laser beam, and laser beams also multiply when in combat.
+- Fix: Black smoke appears during combat.
+
+Note: Fixes may also include bugs fixed before and during the v1 update.
+
+---
+
 ## 1.0.0b 'Solace' [2023.10.30]
 > The ship building (and combat) update.
 - A new ship builder has been built from scratch.
