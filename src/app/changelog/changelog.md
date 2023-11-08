@@ -2,6 +2,46 @@
 <!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.1.0b 'Solace' [2023.11.08]
+> More robust combat system and more stable animated combat.
+
+### Added
+- Add solace turret engagement range.
+
+### Improved
+- Battle panel now keeps displaying destroyed combatants.
+- Ship healing VFX now no longer flashes when spawned.
+- Changed warning ping sound.
+
+### Changed
+- Reworked combat system to ensure all fighters have targets whenever possible.
+
+### Removed
+- Removed empires having different variants of civilian ships (complexity).
+
+### Fixed
+- Fix: Ubiquity -> Combat -> Ships sometimes don't move when in combat.
+- Fix: Battle Panel -> Clicking away does not close panel.
+- Fix: Ubiquity -> Starbase Label -> Resources are not aligned.
+- Fix: Stardocks -> Sometimes spawn inside stars.
+- Fix: Ubiquity -> FTL VFX -> Showing in ubiquity for no reason.
+- Fix: Fleet Panel -> Shows red in text when has extra damage.
+- Fix: Ships should not travel too close to stars/planets when in battle.
+- Fix: Fleet -> Orders are not paused during battle.
+- Fix: Combat System -> Starbases should only be targeted when it is the last remaining target.
+- Fix: Combat System -> Battles last way too long with few ships remaining.
+- Fix: Ships -> Have excessive shields and hull stats so battles last unnecessarily long.
+- Fix: Ubiquity -> Combat -> Ships continue to fire when not in combat.
+- Fix: Ubiquity -> Combat -> Ship has ambiguity (moves left and right continuously) when reaching the edge of the bounding box.
+- Fix: Defence Stats UI -> Hull and shields text appears too blurry.
+- Fix: Starbase Label -> Liberating text shows when not actually liberating.
+- Fix: Claim Drawer -> Does not clear player icon when the player is defeated.
+- Fix: Fleet -> Sometimes fleet move animations do not show.
+- Fix: Fleet Panel UI -> Ubiquity Inspector -> Fleet visualization displays empty sometimes.
+- Fix: Ships -> Have excessive shields and hull stats so battles last unnecessarily long.
+
+---
+
 ## 1.0.1b 'Solace' [2023.11.03]
 > Some bug fixes.
 
