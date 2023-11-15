@@ -13,15 +13,11 @@ export default function Home() {
 
       <section id="wishlist" className="container">
         <div id="logo-container">
-          <img id="icon" src="/img/star-satellites.svg" alt="Star satellites icon - by Lorc under CC-BY-3.0"
-            title="Star satellites icon - by Lorc under CC-BY-3.0" />
+          <img id="icon" src="/img/new-stars-icon-512x512.png" alt="New Stars Satellites Icon" />
           <img id="logo" src="/img/logo-transparent.png" alt="New Stars Logo Transparent" />
         </div>
         <iframe src="https://store.steampowered.com/widget/2231270/" frameBorder="0" width="646" height="190"></iframe>
       </section>
-      <div className="left">
-        <a href="https://game-icons.net/" target="_blank">&copy; Star satellites icon - by Lorc under CC-BY-3.0</a>
-      </div>
 
       <footer>
         <ul className="soc">
