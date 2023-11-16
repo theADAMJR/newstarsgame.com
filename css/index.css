@@ -57,9 +57,9 @@ body,
 #icon {
     z-index: -1;
     position: absolute;
-    width: 172px;
-    left: 35%;
-    top: 50%;
+    width: 240px;
+    left: 30%;
+    top: 30%;
 
     -webkit-animation: spin 69s linear infinite;
     -moz-animation: spin 69s linear infinite;
