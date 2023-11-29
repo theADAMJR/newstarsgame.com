@@ -1,12 +1,208 @@
 <!-- New Stars - Changelog. -->
-<!-- Copyright © 2023 adamjr (CC BY 4.0 - https://creativecommons.org/licenses/by/4.0) -->
+<!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
+
+<!-- ## Unreleased -->
+<!-- Added 'Formation III​.​I: Beyond the Planets' music album. -->
+
+## 2.2.0b 'ARGON II' [2023.11.29]
+> Also includes some changes from Part 1 of Argon update.
+
+### Add
+- Tips panel -> Click/hover SFX for action buttons.
+- Pings -> Form union and SFX (with event panel).
+- Pings -> Our/their siege complete.
+- Seamless -> Meteor VFX spawns randomly on the galaxy map.
+- Ubiquity -> Neutron stars with VFX.
+- Ubiquity -> Pulsars with VFX.
+- Victory conditions (configurable from main menu).
+- Mid-game event -> Open galactic center (cosmic convergence).
+- Univeral SFX (trailer) -> Lose battle SFX.
+- Pings -> Our/their liberation complete.
+
+### Changed
+- Change: Colony Panel -> Population is now included in siege difficulty, for simplicity.
+
+### Improve
+- Seamless -> Claims should have visible borders.
+- Improve: UI -> Player Headers now show "Unknown Player" for unknown players.
+- Improve: Siege -> Having any enemy fleets to the sieger or liberator will pause a siege.
+- Improve: Combat -> Optimization -> Ships no longer recalculate base stats while in combat, since it has no effect in battle and was CPU intensive.
+- Improve: Ubiquity -> Animated Combat -> Ships shoot less in larger battles (i.e. 100 vs 100) to prevent insane lag in large.
+  - Note that large battles were originally intended to be something like 30 vs 30, and 100 vs 100 is unrealistically large.
+- Improve: Empire icons now center around known systems.
+
+### Tweaked
+- Tweak: Asteroid appears game event is now twice as rare.
+- Tweaked asteroid game event probabilities.
+- Balance: Arid worlds are half as likely to spawn, and other world types are much more likely to spawn.
+  - I have not seen rocky worlds in a very long time in the game.
+- Balance: Reduce minimum time it takes to explore planets from `8` days to `5` days.
+- Tweak: Void worlds now have a `15%` chance to spawn if there is a black hole, instead of a `25%`.
+
+### Fixed
+- Battle Panel -> Retreat button is hard to see when not interactable.
+- Building -> Tooltip siege icon is not shown on tooltip manager variables (appears as text instead).
+- Built -> Ubiquity -> Space entity -> Does not play move animation when moving.
+- Claim Drawer -> Player icon remains after being defeated (opacity also does not update).
+- Cobalt -> In-game settings -> Clicking ESC button does not close panel.
+- Colony Panel -> Context menu -> Upgrade button not interactable when can upgrade.
+- Colony Siege -> Population adds to siege difficulty, instead of multiplying, making it feasible to siege large colonies.
+- Combat System -> New fleets that enter combat radius do not trigger in combat (this should be done passively).
+- Cosmic convergence -> Since event is triggered multiple times, duplicate hyperlanes spawn.
+- Cross-scene -> Hotkeys such as 'E' key are not registered by input manager.
+- Diplomacy Panel -> Basic tooltips for summary indicators.
+- Endgame screen -> Defeat -> Exit to menu button is missing.
+- Endgame screen -> Spectate button returns to menu.
+- Fleet -> Not visible when in FTL travel.
+- Fleet -> Trails colours appear white for all empires.
+- Galactic center -> Supermassive black hole spawns away from center on non-tiny maps.
+- Game Event Panel -> Asteroid event -> Disconnects client.
+- Game Event Panel -> Stretched ubiquity inspector panel.
+- Liberating text appears for 0% (when nothing is being sieged).
+- Load save -> Breaks game (occurred when loading save of 3 in-game years).
+- Optimize -> Asteroid fields are very GPU intensive.
+- Siege -> Does not work for colonies (i.e. capital colonies).
+- Solace Ship Builder -> Changing turrets disconnects client.
+- Solace Ship Builder -> Closing lens buttons hides lens buttons.
+- Solace Ship Builder -> Plays sfx randomly in game.
+- Space Squids -> Appears as pre-initialized player.
+- Space squids -> Should not have normal ship ambience sfx.
+- Space Squids -> Uninitialized without meeting all players.
+- Starbase Label -> Starbase label for colony shows starbase occupier as owner, when colony is not occupied.
+- Tips Panel -> Can be closed with ESC.
+- Tooltips -> Not wrapping correctly.
+- Turrets -> Don't look correct way (for sideways turrets).
+- Ubiquity -> Civilian ships have no trails.
+- Ubiquity -> Combat -> Beam turrets do not fire.
+- Ubiquity -> Combat -> Pirate ships don't shoot at anything.
+- Ubiquity -> Combat -> Shields activate when projectile is fired.
+- Ubiquity -> Combat -> Shields don't toggle when deactivated.
+- Ubiquity -> Combat -> Ships continue shooting when destroyed.
+- Ubiquity -> Combat -> Solace ships don't appear as destroyed when destroyed.
+- Ubiquity -> Combat -> Too many shots are fired from turrets causing lag.
+- Ubiquity -> Combat -> Trail colours are not applied correctly (sometimes).
+- Ubiquity -> Construction sparks appear for a few seconds in unclaimed systems.
+- Ubiquity -> Healing VFX shows after ships have finished healing.
+- Ubiquity -> Large ship movement is not smooth (use rotation speed ship stats).
+- Ubiquity -> Light intensity was not rescaled correctly resulting in dark planets next to stars.
+- Ubiquity -> One-ship fleets appear to not be centered correctly.
+- Ubiquity -> Orbit lines don't initialize until scroll up.
+- Ubiquity -> Planet bounds not recalculated when loading save in-game, causing ship pathfinding to break.
+- Ubiquity -> Ship -> Movement too fast on high FPS.
+- Ubiquity -> Ships -> Healing VFX -> Sometimes appears wrong colour (until ubiquity is reopened).
+- Ubiquity -> Space Squids -> Move animation does not play when moving.
+- Ubiquity -> When ships are in combat, orders can still be visualized.
+- Ubiquity -> Ships -> No fade between idle and move ambience (removed distinct engine move ambience).
+- Ubiquity -> Camera -> Map bounds did not cover entire system up to hyperlanes. 
+- Colony Panel -> Building -> Tooltip shows cannot level cap error when acting as foreign business.
+- Fleet Panel -> Ubiquity inspector for ships displayed ships away from center and with trails.
+- Game Event Panel -> Current event sometimes uses image of previous event.
+
+---
+
+# 2.1.0b 'ARGON II' [2023.11.21]
+
+### Added
+- Add: Ubiquity -> Pulsar prefab with emissions VFX.
+- Add: Ubiquity -> Neutron star prefab with emissions VFX.
+- Add: Ubiquity -> New blue galaxy to spawn in.
+- Added: New 'Argon' galaxies.
+- Added: New main menu background.
+
+### Changed
+- Change: Decrease star height deviation to prevent them from being under the map.
+- Changed: Main menu theme 'Planetary Nebula' to 'Beyond the Planets'.
+- Tweak: Ubiquity -> Solace gunboats are now one third larger.
+- Tweak: Map generation -> Non-binary systems are now slightly more common than binary systems.
+- Tweak: Stars -> Now slightly more visible to see them more easily on the map.
+
+### Removed
+- Removed: Old veil nebula VFX (caused too much lag).
+
+### Fixed
+- Fix: Ship builder -> UI for stats overlaps with turret selection on ultrawide displays.
+- Fix: Ship builder -> Ambient background does not expand correctly on ultrawide displays.
+- Fix: Cosmic Convergence -> When event is triggered multiple times, duplicate hyperlanes spawn.
+- Fix: Star system in the center of the galaxy spawns too high.
+- Fix: Input FPS practically doubled due to removal of deprecated code.
+- Fix: Key binding modals don't open assigned panels or show correct hotkeys.
+- Fix: Configured victory conditions not being respected.
+
+---
+
+## 2.0.1b 'ARGON I' [2023.11.18]
+
+### Fixed
+- Global cooling event does not occur.
+- Events -> Cosmic convergence -> Occurs multiple times.
+
+---
+
+## 2.0.0b 'ARGON I' [2023.11.17]
+
+### Added
+- Added more playtesters to credits.
+- Added gold resource.
+- Various resource icons have been reskinned.
+- Replaced jumpscare tech complete sound with the same SFX used for starbase/colony queue complete.
+- Added gold resources, basic resources, advanced resources, time management tip screens to help new players.
+- Added the financial hub building, and the investor job which focuses on commerce and production.
+  - Since gold is the main currency of the galaxy, there is no tech required to build it.
+- Added narrations to tutorial tips.
+
+### Fixed
+- Fix: Colony Siege -> Sieging a colony is unbalanced and completed instantly.
+- Fix star clan government type tooltip showing empty unique building and primary ability.
+- Fix: Ubiquity -> 'Object 51' no longer randomly appears in star systems.
+- Fix: Fleets that are not visible to the player are shown in known Ubiquity system.
+- Fix: Ubiquity build starbase animation -> not scaled correctly and appears too small.
+- Fix: Interstellar -> Vaporize links -> Does not go to nearest hyperlane.
+- Fix: Colony Panel -> Condensed colony building tooltips to address off-screen tooltips.
+- Fix: Tips panel -> Did not show correct background colors for species avatar.
+- Fix: Starbase label HUD not being displayed correctly in occupied systems.
+- Fix: Colony game events did not occur.
+- Fix: Quest panel -> Does not auto close when click away from panel.
+
+### Improved
+- Improve: Colony Siege -> Siege status changes a day to give more realistic and responsive feedback.
+- Improve: Colony Panel -> Added affordance for colony panel upgrade.
+- Refined tips text to make it more clear to new players.
+- Logistical modifiers also decreased to allow faster-paced gameplay.
+
+### Changed
+- Game duration changed to keep the game fresh:
+  - Online Speed -> Game duration went from `25` to `10`.
+  - Fast Speed -> Game duration went from `36` to `20`.
+  - Standard Speed -> Game duration went from `50` to `30`.
+  - Half Speed -> Game duration went from `75` to `40`.
+  - Half Speed -> Game duration went from `100` to `50`.
+- Upscaled space squid textures to from `1024x1024` to `4096x4096`.
+- Reduced space entity spawn cap by 2.5x.
+- Supernova and hypernova game events are now twice as likely to happen.
+- Map generation -> Stars closer to the galactic center are closer together.
+- Fleet panel -> Now shows military stats if player is known.
+- Repeatable techs are now only researchable after all non-repeatable techs are researched.
+- Tweak: Working class workers now cost `1` gold, and specialists now cost `2` gold in upkeep.
+- Tweak: Population -> Base growth rate changed from `1/10` to `1/9`.
+- Added gold to ship upkeep and lowered metals and energy costs for all buildable ships.
+- UI background now appears darker to blend in with the space background.
+- 'Asteroid appears' event is now 5x more likely.
+  - I haven't had this event happen while playtesting in a very long time.
+- Add time manager controls affordance to pause indicator UI.
+- Tweak: Starport -> Build speed changed to `+50%` for Level 2, and `+100%` for Level 3.
+
+### Miscellaneous
+- Game events no longer repeats the same event chains in systems, and this is saved with the game.
+- Added more playtesters to credits.
+
+---
 
 ## 1.1.0b 'Solace' [2023.11.08]
 > More robust combat system and more stable animated combat.
 
 ### Added
-- Add solace turret engagement range.
+- Add solace turret engagement range.git 
 
 ### Improved
 - Battle panel now keeps displaying destroyed combatants.
