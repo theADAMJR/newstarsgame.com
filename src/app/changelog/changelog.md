@@ -3,7 +3,67 @@
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
 <!-- ## Unreleased -->
-<!-- Added 'Formation III​.​I: Beyond the Planets' music album. -->
+<!-- --- -->
+
+## 3.0.0b 'ARGON III' [2023.12.04]
+> Customizable, human-readable, and more version-compatible save files.
+
+### Fixed
+- Fix: AI -> Having 2 builders building starbases at the same time in the same system, causing starbase remnants to be created.
+- Fix: Battles break when one ship can attack other ships freely, but not vice versa.
+- Fix: Battles often just don't fricking work.
+- Fix: Black hole has grey square if on low graphics settings -> Ruining immersion.
+- Fix: Built -> Borders don't display on built game.
+- Fix: Built -> Textures appear blurry when full-screen.
+- Fix: Built -> Ubiquity -> Low-quality nebula VFX.
+- Fix: Built -> Ubiquity -> Stars background moves with the camera.
+- Fix: Claims -> Don't update when starbase is built while ubiquity was open.
+- Fix: Cosmic Convergence -> Appears multiple times in-game after mid-game event.
+- Fix: Cross-scene -> Load save -> Does not restore empire borders.
+- Fix: Empire Claims -> Not restored with saves.
+- Fix: Fleet -> Selecting edge of fleet selects other fleet on galaxy map.
+- Fix: Fleet orders -> Do not work after loading save.
+- Fix: Game event panel -> Sometimes has stretched planet visuals.
+- Fix: Load save -> Battles are not reassigned to combatants correctly.
+- Fix: Load save -> Does not restore starbase data correctly resulting in random starbase placement.
+- Fix: Load save -> Galaxy map does not display when loading save multiple times.
+- Fix: Main menu -> Create game does not open loading screen immediately (does not always occur).
+- Fix: Pings -> Metadata does not save for some pings.
+- Fix: Player prefs -> Default graphics options are lowest settings making game look initially bad.
+- Fix: Save game -> Combat system battles do not save correctly.
+- Fix: Saving system -> Pings don't restore when loading save.
+- Fix: Starbase panel -> Designation buttons are not highlighted, making it seem buttons are disabled.
+- Fix: Starbase strength does not show in ubiquity HUD for regular starbases.
+- Fix: Starbase upgrade tooltip -> Appears off-screen.
+- Fix: Starbase/Colony occupation pings occurring when not the original owner of the starbase/colony.
+- Fix: Ubiquity -> Combat -> Star cruisers engage at too close distance.
+- Fix: Ubiquity -> Does not display structures/fleets when fleet is being built.
+
+### Added
+- Added 'Formation III​.​I: Beyond the Planets' music album.
+- Add: Icons for explicitly displaying starbase designations.
+- Add: Narrated SFX for specific pings (such as tech researched).
+
+### Improved
+- Improve: Main menu -> Increased average FPS to 70 from 20.
+- Improve: Some loud music tracks have been reduced in volume to prevent sudden hearing loss.
+- Improve: Interstellar VFX -> Silent state: enter stealth mode.
+- Improve: Create map -> Save previous map settings in player prefs.
+
+### Changed
+- Change: New music tracks added, some tracks removed.
+- Tweak: Asteroid appears -> Now costs `250` Energy to shoot down instead of `500`.
+- Tweak: Extreme isolationist opinion modifier changed from `-250` to `-100` because they did nothing wrong.
+- Tweak: Broken worlds now have a 4% chance of spawning instead of 2%.
+
+### Removed
+- Remove: Purple galaxy -> It needs polishing before re-adding.
+- Remove: Fleet panel -> Fleet inspector -> It has been broken for too long.
+- Remove: Endgame screen -> Spectate button after being defeated since it was too unstable.
+- Remove: Starbase panel -> Starbase inspector -> It is not always reliable.
+- Remove: Settings -> Wiki key-binding -> Wiki panel is no longer in the game.
+
+---
 
 ## 2.2.0b 'ARGON II' [2023.11.29]
 > Also includes some changes from Part 1 of Argon update.
