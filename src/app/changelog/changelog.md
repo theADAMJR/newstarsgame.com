@@ -9,7 +9,7 @@
 - Fix: Saving system -> Loads wrong map size [does not apply on game manager in time].
     - Now map settings cannot be changed while save is loading.
 - Fix: Save game -> Game events have issues saving and cause broken save files.
-- Fix: Load save -> Player quests are not loaded and log error, and are not backwards compatible.
+- Fix: Load save -> Player quests are not loaded and logs error, and are not backwards compatible.
 - Fix: Built -> Tips panel -> Tutorial narration far from being synced with typewriting text.
 - Fix: Cooperative militarist -> Join wars works when other player has friendly relations with victim empire.
 
