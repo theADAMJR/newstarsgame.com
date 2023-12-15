@@ -42,7 +42,7 @@ export default function RootLayout({
         <meta property="twitter:description" content="Expand your own galactic empire across new stars, advance technologies, and challenge great alien powers in this immersive 4X grand strategy game. Build sci-fi colonies, and starbases to gather scarce resources. Explore a unique galaxy full of secrets, great perils, and infinite possibilities." />
         <meta property="twitter:image" content="https://github.com/theADAMJR/newstarsgame.com/raw/main/public/front-page.png" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className + ' no-scroll'}>{children}</body>
     </html>
   )
 }

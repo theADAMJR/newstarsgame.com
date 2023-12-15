@@ -1,12 +1,21 @@
+"use client"
 import { marked } from 'marked';
 import './changelog.css';
 import Navbar from '@/components/navbar';
+import { useEffect } from 'react';
 
 export const metadata = {
   title: 'New Stars - Changelog',
 }
 
 export default function Home() {
+  useEffect(() => {
+    document.body.classList.remove('no-scroll');
+    return () => {
+      document.body.classList.add('no-scroll');
+    };
+  }, []);
+
   const changelog = require('./changelog.md').default
     .replace(/- ([A-Za-z \-,]+) ->/gm, "- **$1** ->")
     .replace(/- ([A-Za-z \-,]+):/gm, "- **$1**:")
@@ -14,7 +23,7 @@ export default function Home() {
     .replace(/    ->/gm, "    -");
 
   return (
-    <main className="min-h-screen pb-40">
+    <main className="min-h-screen pb-40 .main">
       <Navbar />
 
       <header className='py-20 pt-40'>

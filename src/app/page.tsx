@@ -1,8 +1,17 @@
+"use client"
 import Navbar from '@/components/navbar';
+import { useEffect } from 'react';
 
 export default function Home() {
+  useEffect(() => {
+    document.body.classList.add('no-scroll');
+    return () => {
+      document.body.classList.remove('no-scroll');
+    };
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between">
+    <main className="flex min-h-screen flex-col items-center justify-between" style={{ overflow: 'hidden' }}>
       <div className="overflow-hidden parallax-container" style={{ height: '100vh' }}>
         <div className="parallax-background"></div>
         <div className="parallax-midground"></div>

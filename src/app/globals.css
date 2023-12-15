@@ -8,6 +8,6 @@ body {
   color: white;
 }
 
-html {
+.no-scroll {
   overflow: hidden;
 }
