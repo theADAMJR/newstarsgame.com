@@ -5,6 +5,10 @@
 ## 3.1.1b 'ARGON III' [14.12.2023]
 > Hotfix for loading saves.
 
+### Improve
+- Improve: newstarsgame.com -> Added stars background to changelog, instead of nebula to make text more legible.
+- Fix: newstarsgame.com -> Overflow was added to page when switching between 'Home' and 'Changelog' on 1920x1080 resolution.
+
 ### Fixed
 - Fix: Saving system -> Loads wrong map size [does not apply on game manager in time].
     - Now map settings cannot be changed while save is loading.
