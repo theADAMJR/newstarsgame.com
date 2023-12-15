@@ -2,8 +2,153 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-<!-- ## Unreleased -->
-<!-- --- -->
+## 3.1.1b 'ARGON III' [14.12.2023]
+> Hotfix for loading saves.
+
+### Fixed
+- Fix: Saving system -> Loads wrong map size [does not apply on game manager in time].
+    - Now map settings cannot be changed while save is loading.
+- Fix: Save game -> Game events have issues saving and cause broken save files.
+- Fix: Load save -> Player quests are not loaded and log error, and are not backwards compatible.
+- Fix: Built -> Tips panel -> Tutorial narration far from being synced with typewriting text.
+- Fix: Cooperative militarist -> Join wars works when other player has friendly relations with victim empire.
+
+---
+
+## 3.1.0b 'ARGON III' [14.12.2023]
+> A week of bug fixes. Reality check update, with some cool features.
+> Many severe bugs were fixed, and some were probably over a year old.
+> This is the first New Stars build in compiled in C++, as opposed to C#, for better performance.
+
+### Added
+- Add naval capacity modifier.
+- Add fog of war -> Veil effect for undiscovered systems.
+- Add Steam cloud support for Linux.
+- Add Steam cloud support for Windows.
+
+### Improved
+- Improve: Pop Growth -> Tooltip now shows whether population is being exterminated.
+- Improve: Building Tooltip -> Show building unique bonus [affordance].
+- Improve: You can now rename things up to 32 characters, instead of 20.
+- Improve: Implement different fog of war colours based on Argon galaxy.
+- Improve: Ubiquity -> Increased HUD size to make more visible in star systems.
+
+### Changed
+- Change: Starting world origins now change world preference.
+- Change: Star Clans -> You can now trade with peaceful star clans because why not?
+
+### Tweaked
+- Tweak: Gene cleansing facility -> +20% pop growth reduced to +15%.
+- Tweak: Xeno exterminator -> -500 opinion changed to -250.
+- Tweak: World spawn chance increased by 33% to 8%.
+- Tweak: Claiming now costs only 50 metals instead of 100 to prevent expansion bottlenecks.
+- Tweak: Added logistical modifier for cooldowns listed below [these cooldowns are now based on game duration].
+    - Denounce Cooldown, Peace Cooldown, Friendship Duration, Truce Duration, AI Trade Request Cooldown, Terraform Duration, Star System Storm Duration.
+- Tweak: Added logistical modifier for ship EXP [ship EXP is now based on game duration]
+### Fixed
+- Fix: Colony panel -> Energy focus has wrong resource colour.
+- Fix: Fleet -> Visualizing movement of a large amount of fleets (≥5) selected at once causes massive lag spikes, since all of them pathfind at once [optimization].
+- Fix: AI is controlling normal fricking starbases, including designations etc.
+- Fix: Built -> Game -> Starts more than 12 players on tiny map, with defaults, which should not be possible [old player prefs overrode new max values].
+- Fix: Endgame conditions -> Player is not defeated when lost capital colony.
+- Fix: Peacekeeping pacifist -> AI fleets just jumped past peacekeeping fleets while they were peacekeeping.
+- Fix: Xeno exterminator -> Cannot build unique building on colony.
+- Fix: Ping -> Tooltips don't apply variables properly.
+- Fix: Make subject -> Cannot make subject out of integrated clan capital colony.
+- Fix: Hegemonic subjugator -> Cannot integrate barbaric clan when neighbours with them.
+- Fix: Starbase panel -> Upgrade tooltip does not include upgrade cost.
+- Fix: Built -> Fog of war doesn't work in built game.
+- Fix: Clan -> Clans do not siege capital, but instead, just raze the colony.
+- Fix: Built -> Fog of war does not display on built game.
+- Fix: Game events -> Sometimes does not open after ping received.
+- Fix: Spice lords does not generate spice on colony world.
+- Fix: Origins -> Abyssal nomads origin does not spawn with antimatter.
+- Fix: Starbase panel -> Orders -> It's possible to modify build queue without being the starbase owner in some cases.
+- Fix: Pings -> Game events don't work. Game event pings don't work either.
+- Fix: Combat system -> Battles can sometimes randomly not progress.
+- Fix: Resource manager -> Modifiers are incorrectly applied to negative values.
+- Fix: Load game -> Resource counts do not update correctly.
+- Fix: Ubiquity -> Ships sometimes don't respond to orders after battle (linked to move target locked?).
+- Fix: Main menu -> Time victory explanation is a copied from conquest victory.
+- Fix: Double cross-scene -> Start game -> Map settings are ignored and huge map is generated.
+- Fix: Built -> Starting a game had instant defeat screen.
+- Fix: Main menu -> Create map -> Initially loaded map settings are not synced with game manager map settings.
+- Fix: Fleet -> Merge and split -> First ship gets extra stats.
+- Fix: Merge and split -> Fleets reduce in size after merging and splitting.
+- Fix: Load save -> Does not always pause time after loading save.
+- Fix: Split and merge -> Fleets with odd numbers are removed.
+- Fix: Fleet -> Military ships sometimes spawn with higher hull than their base stats.
+- Fix: Built -> Load save -> Galaxy map saves the wrong galaxy size.
+- Fix: Main menu -> Camera can sometimes deviate from its original position.
+- Fix: Sometimes when a star system was loaded there is a GPU swapchain error, causing the game to crash.
+- Fix: Empire can have the same colours resulting in invisible icon.
+- Fix: Starbase label -> Siege progress bar is too hard to see (too transparent).
+- Fix: UI should never start at anything other than 0.5 scale.
+- Fix: Starbase label -> HUD shows red when no free housing (show yellow / orange for affordance).
+- Fix: Built -> Stars look bad on blue galaxy map.
+- Fix: Solace ship builder -> Frigate is loaded, when gunboat is initially selected.
+- Fix: Monthly resources -> Negative monthly resources appear as zero in toolbar, not discounting any resources.
+- Fix: Fleet panel -> Does not open when a lot of large fleets are selected.
+- Fix: Fleet -> Merge and split -> When done enough times, some ships become empty.
+
+### Balanced
+- Balance: Special ability costs.
+- Balance: Jobs cost less than half as much gold to maintain than before.
+- Balance: Time to build changed to `30 days` on quickest speed.
+- Balance: Tech -> Base cost is now 400 on standard duration.
+- Balance:
+- Balance: AI agendas -> Modifier changed from `50` to `30` for each agenda.
+- Balance: Power cost for claiming should not be 17.5 with any game duration.
+- Balance: Set base food monthly resource to zero, since should be produced on colonies only, and builds up too much.
+- Balance: Starbase upgrade cost is unbalanced and too cheap.
+- Balance: Reduce power cost increment to 5.
+- Balance: Half time it takes to build a colonist.
+- Balance: Ship build speed for a typical ship should take around 15-60s on all game durations.
+- Balance: Fleet -> Increase speed in system by 1.2x since it isn't Stellaris.
+- Balance: Form union -> Cost was drastically reduced to be more affordable.
+- Balance: AI attitude parameters changed from `200`, to `150` to make getting desired diplomacy levels quicker and easier.
+- Balance: AI agendas -> Modifier changed from `50` to `30` for each agenda.
+- Balance: AI receives more starting fleets depending on difficulty.
+- Balance: Ship builder -> Add techs for turrets, and balance turrets.
+- Balance: Techs for different turret types.
+
+### Removed
+- Remove: Settings -> UI scale input.
+
+> Note: Build text in main menu shows 4th of December.
+
+---
+
+## 3.0.1b 'ARGON III' [2023.12.06]
+> Bug fixes.
+
+### Fixed
+- Fix: Trade Panel -> Crimson Stardust icon appears empty.
+- Fix: Colony -> Balance icon for food appears empty.
+- Fix: Megacorps can export from foreign colony as a business.
+- Fix: Save game -> Colony siege progress does not save.
+- Fix: Load save -> After battle ends, ship still appears as in battle, which prevents fleet panel from opening properly.
+- Fix: If quality is changed, it does not auto-change other settings.
+- Fix: Settings menu display does not match player prefs.
+- Fix: Shadow cascades UI not being updated correctly in settings menu.
+- Fix: Settings -> Texture quality decreases with higher quality settings.
+- Fix: Hyperlanes often overlap, and they should be much more offset.
+- Fix: Map settings -> Randomize -> Does not update victory conditions UI which is misleading.
+- Fix: In-game -> Settings menu -> Re-enables advisor constantly.
+- Fix: MSAA sample count UI not being updated correctly in settings menu.
+
+### Improved
+- Improve: Indicate designated starbases on map (i.e. hub, fort, etc.) with icons.
+- Improve: Main menu -> Option description no longer disappears when open modal.
+- Improve: Main menu -> More details for randomize buttons for clarity.
+
+### Changed
+- Tweaked: Ubiquity ship speed to match projected speed in system.
+
+### Note
+Update will show '3.0.0b' because I forgot to update it.
+
+---
 
 ## 3.0.0b 'ARGON III' [2023.12.04]
 > Customizable, human-readable, and more version-compatible save files.
