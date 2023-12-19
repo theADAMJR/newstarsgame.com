@@ -2,6 +2,106 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 3.2.0b 'ARGON' [17.12.2023]
+> 48+ more bugs fixed ahead of early-access.
+
+### Added
+- Add: VFX -> Peacekeeping pacifist: Peacekeeping active (convert healing VFX to shields).
+
+### Improved
+- Improve: Different border colours for clans - transparent - with white or red outline for peaceful/non-peaceful.
+- Improve: Update collected resources when export starbase gold.
+- Improve: Bug reporting interface -> Use F10 hotkey to open.
+- Improve: Add global battle start SFX when battles start.
+- Improve: Ping / reminder for reporting bugs.
+- Improve: Solace ship builder -> Lock unlocked and not unlocked ship types.
+- Improve: Starbase tooltip to make it more readable.
+- Improve: Combatant tooltip.
+- Improve: Techs -> Ship unlock techs now give +5 fleet capacity.
+
+### Changed
+- Change: Starting world origins now change world preference.
+
+### Tweaked
+- Tweak: Increase world spawn by around 1/9.
+
+### Balanced
+- Balance: Use non-linear time to siege to speed up sieging on large colonies (diminishing marginal returns).
+- Balance: Sieging with a fleet of 5 gunboats should not take many years in-game.
+- Balance: Extreme isolationist -> Vaporize takes is now modified by logistical modifier [360 days on standard speed].
+- Balance: Explorers should take half as long to explore.
+- Balance: Players are too bipolar -> Agenda flip-flops.
+- Balance: Require techs to unlock ship turrets.
+- Balance: Make it easier to keep alliance at start -> Start with max trust etc.
+- Balance: Win battle EXP increased by 15x on standard speed.
+- Balance: Pop manager -> Changed from 1/9 to 1/6.
+- Balance: Colony -> Remove gold upkeep from buildings to lower gold consumption.
+- Balance: Give ability to send military fleets to destroy pirate scouts.
+- Balance: Game events -> Logistically modify resources from actions.
+- Balance: Fleet EXP from battles is negligible.
+- Balance: Base integration cost from 5000 energy to 600 gold.
+- Balance: Gold production from jobs.
+- Balance: Celestial squid -> Damage changed from 100 to 250, hull changed from 15000 to 30000, and speed changed from 10 to 20.
+- Balance: Negotiate peace threshold -> No longer controlled by logistical modifier and is 1 year on all game durations.
+- Balance: Increase combat engagement radius in center of galaxy system.
+- Balance: Fleet capacity now increases 
+
+### Fixed
+- Fix: Toggling stealth mode does not update order time -> Time to move should be twice as long when in stealth mode.
+- Fix: Colony panel -> Purchase rights tooltip has uninitialized tooltip.
+- Fix: Game event panel -> Did not open.
+- Fix: Colony panel -> Cannot demolish singleton buildings such as a Seclusion Nexus.
+- Fix: Galaxy -> Stars look good on milky way galaxy, but bad on others.
+- Fix: AI -> AI cannot accept union requests (unimplemented).
+- Fix: Built -> Start game -> Game uses wrong galaxy size [player prefs wrong again?].
+- Fix: Battle panel -> Retreat button is enabled even if not part of battle.
+- Fix: Built -> Cobalt -> Settings -> Defaults do not appear to be set when open settings menu for first time.
+- Fix: Diplomacy panel -> Variables appear broken and are not applied properly.
+- Fix: Load save -> Fog of war spawns in 2 overlapping layers.
+- Fix: Game event panel -> If current event has no options, previous event options will be displayed.
+- Fix: Event panel -> Variables sometimes appear broken and are not applied properly.
+- Fix: Load save -> Built -> Resource count does not always update.
+- Fix: Built -> Load save -> Game loads wrong galaxy size.
+- Fix: Quest panel -> Colony in reference is not stated which causes ambiguity.
+- Fix: Celestial squid should have huge combat radius to prevent anyone from building starbase in galactic center, and to actually be a challenge.
+- Fix: Celestial squid should be guarding default center of battle otherwise ships go away from ship during battle [starbase position].
+- Fix: Load save -> Cross-scene -> Does not restore empire borders.
+- Fix: Colony siege -> Siege should auto decrease if nobody is enforcing it over time.
+- Fix: Fleet -> Combat radius does not work correctly for celestial squid.
+- Fix: Celestial squid -> Can respawn after defeated.
+- Fix: Ubiquity -> Drag select fleets does not select fleets with multiple ships.
+- Fix: Colony panel -> Update siege tooltip to reflect new stats.
+- Fix: Starbase panel -> Multiple upgrade orders can be queued at once [and AI does it automatically].
+- Fix: Fleet -> Should be able to move into unknown systems with fleets, as long as is adjacent to known system [for military campaigns].
+- Fix: Resources -> Should not display with decimal places over 2dp.
+- Fix: AI -> Non extreme isolationists can destroy hyperlanes.
+- Fix: Game event panel -> Options are sometimes randomly disabled.
+- Fix: Battle -> Win battle SFX is not called.
+- Fix: Colony siege -> Sometimes stays occupied after defeating original owner, preventing building.
+- Fix: Diplomacy panel -> When diplomacy panel updates, tips panel is updated.
+- Fix: Research option UI -> Saved progress does not show in rolled tech option progress bars.
+- Fix: Diplomacy panel -> No indication for how long is required for peace deal to be possible.
+- Fix: Cross-scene -> When changing scene lowest anti aliasing, and texture settings are applied.
+- Fix: Settings -> Changing quality level does not immediately update other graphics settings.
+- Fix: Solace ship builder -> Preset names don't match what is buildable.
+- Fix: Resources -> Having negative resources means you cannot afford anything -> Should be when cost is greater than zero for a negative resource of type [e.g. has -1 energy, but costs 50 energy].
+- Fix: Fleet panel -> Ship presets appear duplicated.
+- Fix: Solace ship builder -> Presets are not synced with what is buildable [preset name, cost, etc.].
+- Fix: Resource -> Cannot afford something when has negative resource.
+- Fix: Load save -> Galaxy visual is sometimes different?!
+- Fix: Ubiquity -> Combat -> Fleets should get back into formation after battle.
+- Fix: Ubiquity -> Sometimes when exiting ubiquity borders randomly disappear.
+- Fix: Load save -> In-game -> Does not update system text, starbase labels, etc.
+- Fix: Resource manager -> For some reason resources are actually not updating in monthly update.
+- Fix: Add image to celestial squid slain game event.
+- Fix: Reveal all -> Galactic center is partially visible, before the cosmic convergence game event -> Make it visible b/c why not?
+- Fix: Starbase panel -> Deoccupy button text wrapping fails.
+
+### Removed
+- Remove: Selected fleet -> Combat radius indicator -> Because it does not correctly indicate battles [disable for now].
+
+---
+
 ## 3.1.1b 'ARGON III' [14.12.2023]
 > Hotfix for loading saves.
 
@@ -13,7 +113,7 @@
 - Fix: Saving system -> Loads wrong map size [does not apply on game manager in time].
     - Now map settings cannot be changed while save is loading.
 - Fix: Save game -> Game events have issues saving and cause broken save files.
-- Fix: Load save -> Player quests are not loaded and logs error, and are not backwards compatible.
+- Fix: Load save -> Player quests are not loaded and log error, and are not backwards compatible.
 - Fix: Built -> Tips panel -> Tutorial narration far from being synced with typewriting text.
 - Fix: Cooperative militarist -> Join wars works when other player has friendly relations with victim empire.
 
@@ -49,6 +149,7 @@
 - Tweak: Added logistical modifier for cooldowns listed below [these cooldowns are now based on game duration].
     - Denounce Cooldown, Peace Cooldown, Friendship Duration, Truce Duration, AI Trade Request Cooldown, Terraform Duration, Star System Storm Duration.
 - Tweak: Added logistical modifier for ship EXP [ship EXP is now based on game duration]
+
 ### Fixed
 - Fix: Colony panel -> Energy focus has wrong resource colour.
 - Fix: Fleet -> Visualizing movement of a large amount of fleets (≥5) selected at once causes massive lag spikes, since all of them pathfind at once [optimization].
@@ -100,7 +201,6 @@
 - Balance: Jobs cost less than half as much gold to maintain than before.
 - Balance: Time to build changed to `30 days` on quickest speed.
 - Balance: Tech -> Base cost is now 400 on standard duration.
-- Balance:
 - Balance: AI agendas -> Modifier changed from `50` to `30` for each agenda.
 - Balance: Power cost for claiming should not be 17.5 with any game duration.
 - Balance: Set base food monthly resource to zero, since should be produced on colonies only, and builds up too much.
