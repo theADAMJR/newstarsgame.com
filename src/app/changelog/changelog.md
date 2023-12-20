@@ -2,6 +2,50 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.0 'ARGON' [20.12.2023]
+> The early-access release update - Argon focused on initial stability, balancing, and polishing.
+
+### Fixed
+- Fix: Ship builder -> Star cruiser can appear when managing presets [after deleting presets].
+- Fix: Colony panel -> Level 2 warning displays when wanting to upgrade a level 2 building.
+- Fix: Colony panel -> Upgrade button -> Level 2 warning tooltip not appearing when required tech is not unlocked.
+- Fix: Planet textures -> Appear low quality in-game.
+
+---
+
+## 3.2.1b 'ARGON' [19.12.2023]
+> Pre-release update.
+
+### Fixed
+- Fix: Ubiquity -> Cannot click on unknown system when our military fleet is in it.
+- Fix: Fleet -> Fleets can often get randomly pushed from the system when going to an enemy system.
+- Fix: Pings -> Tech researched -> Does not show which tech was researched, leading to confusion.
+- Fix: Fleet -> Frigates, light cruisers, heavy cruisers, and star cruisers have incorrect ship size.
+- Fix: Load save -> Pings are not restored with save.
+- Fix: Map generation -> Wormholes should not spawn in the galactic center.
+- Fix: Ubiquity -> Ship -> Movement speed does not scale with time scale, or ship speed (again).
+- Fix: Ubiquity -> Hyperlanes that are close together are repositioned to face weird directions.
+- Fix: System panel -> Planets in unknown systems had a known intel level.
+- Fix: Game event panel -> Text is unreadable when hovering over buttons.
+- Fix: Main menu -> Settings -> Exit button does not go back to the play screen / does not work with hotkey.
+- Fix: Camera -> When a unit is selected, the player cannot look around with the mouse, which is "awkward."
+- Fix: Tips panel -> Can be closed by selecting another fleet or opening another panel, interrupting core flow.
+- Fix: Make peace -> Sieged systems are not annexed.
+- Fix: Shift UI -> Appears on the settings menu.
+- Fix: Built -> Tips panel -> Tutorial narration is way too quiet.
+
+### Improved
+- Improve: Siege should instantly end if no enemies exist after a peace deal [siege was taking too long, so a peace deal was taken].
+- Improve: AI -> Clans now form opinions like regular empires.
+- Improve: System name text -> Occupation indicator to view occupied systems on the map.
+- Music volume is now reduced when tutorial narration is active.
+
+### Balanced
+- Balance: Change starbase base damage to 15 from 10.
+- Balance: Diplomacy -> Clans should treat all government types equally.
+
+---
+
 ## 3.2.0b 'ARGON' [17.12.2023]
 > 48+ more bugs fixed ahead of early-access.
 
