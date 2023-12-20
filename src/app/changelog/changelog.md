@@ -2,6 +2,19 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.1 'META' [20.12.2023]
+> Hotfix partially addressing concerns regarding optimization by reducing lots of calls regarding star systems. 
+> The update name is now changing, since the 'ARGON' update is concluded.
+
+### Fixed
+- Fix: Tips panel -> No systems are highlighted on the map when explorer fleet move tip is opened.
+- Fix: Fog of war -> Sometimes appears glitchy when starting the game.
+
+### Improved
+- Improve: Player -> Cache owned star systems to reduce hundreds of calls, thereby reducing CPU calculations [optimization].
+
+---
+
 ## 1.0.0 'ARGON' [20.12.2023]
 > The early-access release update - Argon focused on initial stability, balancing, and polishing.
 
@@ -9,7 +22,12 @@
 - Fix: Ship builder -> Star cruiser can appear when managing presets [after deleting presets].
 - Fix: Colony panel -> Level 2 warning displays when wanting to upgrade a level 2 building.
 - Fix: Colony panel -> Upgrade button -> Level 2 warning tooltip not appearing when required tech is not unlocked.
-- Fix: Planet textures -> Appear low quality in-game.
+- Fix: Built -> Planet textures -> Appear low quality in built game.
+- Fix: Load save -> Fog of war -> Sometimes spawns in incorrect places after loading save.
+- Fix: Players -> Bankruptcy is not applied to players when cannot pay off monthly consumption.
+
+### Balanced
+- Balance: Colonist -> Reduce colonist cost to 150 metals / 150 food on standard speed.
 
 ---
 
@@ -33,6 +51,7 @@
 - Fix: Make peace -> Sieged systems are not annexed.
 - Fix: Shift UI -> Appears on the settings menu.
 - Fix: Built -> Tips panel -> Tutorial narration is way too quiet.
+- Fix: Game Event Panel -> Options are disabled when they shouldn't be [only one option for asteroid appears game event is enabled].
 
 ### Improved
 - Improve: Siege should instantly end if no enemies exist after a peace deal [siege was taking too long, so a peace deal was taken].
