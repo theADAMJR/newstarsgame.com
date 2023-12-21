@@ -17,6 +17,7 @@
 - Add: Solace Ship Builder -> Tooltip for weapon stats in ship builder.
 
 ### Fixed
+- Fix: Settings -> Anti-aliasing -> Selector had no effect on anti aliasing.
 - Fix: Solace Ship Builder -> Lens buttons overlay obstructs preset management UI.
 - Fix: Loading Screen -> Shows black borders on top and bottom of the screen on some resolutions.
 - Fix: Built -> Planet visuals -> Lower quality in built game as textures are set to low, but not updated automatically in graphics manager.
