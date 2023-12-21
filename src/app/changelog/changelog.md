@@ -2,9 +2,31 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.2 'META' [21.12.2023]
+> Some fixes addressing issues with screen resolution, and other suggestions.
+
+### Added
+- Add: Settings -> Change screen resolution.
+- Ensure to reset Steam launch options that override resolution, or they may cause issues.
+- The in-game resolutions are:
+    - Initial screen resolution
+    - 3840x2160
+    - 2560x1400
+    - 1920x1080
+    - 1280x720
+- Add: Solace Ship Builder -> Tooltip for weapon stats in ship builder.
+
+### Fixed
+- Fix: Solace Ship Builder -> Lens buttons overlay obstructs preset management UI.
+- Fix: Loading Screen -> Shows black borders on top and bottom of the screen on some resolutions.
+- Fix: Built -> Planet visuals -> Lower quality in built game as textures are set to low, but not updated automatically in graphics manager.
+- Fix: Cross-scene -> Sometimes random empire borders are sometimes spawned in wrong places (fixed in previous update).
+
+---
+
 ## 1.0.1 'META' [20.12.2023]
 > Hotfix partially addressing concerns regarding optimization by reducing lots of calls regarding star systems. 
-> The update name is now changing, since the 'ARGON' update is concluded.
+> The update name is now changing, since the 'ARGON' update has concluded.
 
 ### Fixed
 - Fix: Tips panel -> No systems are highlighted on the map when explorer fleet move tip is opened.
