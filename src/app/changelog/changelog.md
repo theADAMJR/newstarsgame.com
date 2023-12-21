@@ -2,6 +2,41 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.3 'META' [21.12.2023]
+> Some fixes.
+
+### Possible Fix
+- Possible Fix: Crashing bug after playing game for "half an hour", then game does not re-open (may be device-specific).
+
+### Tweaked
+- Tweak: Game events -> Colony dangerous wildlife -> First option gives 120 instead of 100 food on standard speed.
+- Tweak: Ion flux -> Changed icon for turret to not be a duplicate of ion stream.
+
+### Fixed
+- Fix: Create empire -> Empire name and colours are randomly changed when creating a game -> "Unable to choose EU flag background colour as primary colour."
+    - Also added official EU colours to colour picker.
+- Fix: Animated combat -> Hyper-janky turrets when time is at 2x speed (turrets fire extremely fast).
+    - Now turret firing speed is constant on all timescales.
+- Fix: Ubiquity -> Planet name appears in tooltip instead of "Unknown" for unknown systems.
+- Fix: Ubiquity -> Having around 20 ships in one system causes lag spikes every in-game day [optimize].
+- Fix: Solace ship builder -> Hologram turrets are not affected by master volume or ambient volume.
+- Fix: Ubiquity -> Ships often jump around when moving, especially in animated combat, especially at 2x time speed [happens after winning battle].
+- Fix: Animated combat -> Ships continue shooting after destroyed.
+- Fix: Silent state -> Stealth fleets should not meet players in system.
+- Fix: Ubiquity -> When move fleet into Ubiquity hyperlane that is neutral, war confirmation does not show, leading to nothing happening.
+- Fix: Fleet panel -> Fleet capacity UI adds up ship count instead of ship size.
+- Fix: Game event panel -> Selecting option is not disabled when reopening the ping, allowing options to be selected multiple times.
+- Fix: Occupy colony -> Sets colony of `22` population to `1`.
+- Fix: Settings -> Vsync is not applied in-game when set in main menu.
+- Fix: Animated combat -> Beam turrets beams are not visible.
+- Fix: Solace ship builder -> Ship stats -> Some costs overflowed the ship stats UI.
+- Fix: Fleet panel -> Fleet capacity for civilian ships (i.e., builders) shows 2/1.
+
+### Improved
+- Improve: Ubiquity -> Hyperlane -> Improve tooltip to indicate whether borders are closed or not.
+
+---
+
 ## 1.0.2 'META' [21.12.2023]
 > Some fixes addressing issues with screen resolution, and other suggestions.
 
@@ -17,7 +52,7 @@
 - Add: Solace Ship Builder -> Tooltip for weapon stats in ship builder.
 
 ### Fixed
-- Fix: Settings -> Anti-aliasing -> Selector had no effect on anti aliasing.
+- Fix: Settings -> Anti-aliasing -> Selector has no effect on anti aliasing.
 - Fix: Solace Ship Builder -> Lens buttons overlay obstructs preset management UI.
 - Fix: Loading Screen -> Shows black borders on top and bottom of the screen on some resolutions.
 - Fix: Built -> Planet visuals -> Lower quality in built game as textures are set to low, but not updated automatically in graphics manager.
