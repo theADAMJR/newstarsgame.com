@@ -2,15 +2,47 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.0.5 'META' [22.12.2023]
+> Bug fixes.
+
+### Fixed
+- Fix: Colony -> Planet composed entirely of farmers is not producing enough food.
+- Fix: Colony -> Population does not grow with 0 food, even though it is not starving.
+- Fix: Star system -> Cannot colonize void world if a broken world is spawned before it.
+
+### Balanced
+- Balance: Colony -> Capital buildings now produce 2 energy to offset deficits.
+
+---
+
+## 1.0.4 'META' [22.12.2023]
+> More fixes and UI tweaks.
+
+### Added
+- Add: Bug reporting interface -> Save files are now sent with bug reports, to make it easier to reproduce bugs.
+
+### Possible Fix
+- Possible fix: Game -> Game boots into windowed mode by default (default was set to windowed and 720p in player settings).
+
+### Fixed
+- Fix: Create subject -> Does not update empire borders.
+- Fix: Bug reporting interface -> Send button was missing tooltip info.
+- Fix: Subject -> Subjects should join union when overlord forms union, as they are still subjects.
+- Fix: Main menu -> Loading screen, load menu, etc., were not visible when opened.
+
+### Improved
+- Improve: Colony panel -> Updated summary icons.
+
+### Tweaked
+- Tweak: Game event -> Colony extreme polar regions -> First option now gives `90` science instead of `100`.
+
+---
+
 ## 1.0.3 'META' [21.12.2023]
 > Some fixes.
 
 ### Possible Fix
 - Possible Fix: Crashing bug after playing game for "half an hour", then game does not re-open (may be device-specific).
-
-### Tweaked
-- Tweak: Game events -> Colony dangerous wildlife -> First option gives 120 instead of 100 food on standard speed.
-- Tweak: Ion flux -> Changed icon for turret to not be a duplicate of ion stream.
 
 ### Fixed
 - Fix: Create empire -> Empire name and colours are randomly changed when creating a game -> "Unable to choose EU flag background colour as primary colour."
@@ -34,6 +66,10 @@
 
 ### Improved
 - Improve: Ubiquity -> Hyperlane -> Improve tooltip to indicate whether borders are closed or not.
+
+### Tweaked
+- Tweak: Game events -> Colony dangerous wildlife -> First option gives 120 instead of 100 food on standard speed.
+- Tweak: Ion flux -> Changed icon for turret to not be a duplicate of ion stream.
 
 ---
 
