@@ -2,6 +2,13 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.1.0 'META' [22.12.2023]
+> Experimenting with old main menu style, also fixed a bug someone had an with loading their save.
+
+
+
+---
+
 ## 1.0.5 'META' [22.12.2023]
 > Bug fixes.
 
