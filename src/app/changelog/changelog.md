@@ -2,10 +2,12 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-## 1.1.0 'META' [22.12.2023]
-> Experimenting with old main menu style, also fixed a bug someone had an with loading their save.
+## 1.0.6 'META' [23.12.2023]
+> Fixing saving system bugs players encountered.
 
-
+### Fixed
+- Fix: Load game -> Map does not generate correctly -> "Saved games will not work" -> The game was not generating the correct map size to load the save from.
+- Fix: Load save -> Resource counts do not always update and show negative values.
 
 ---
 
