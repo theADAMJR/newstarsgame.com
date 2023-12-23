@@ -2,6 +2,18 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.1.0 'META' [23.12.2023]
+> Rebranding of main menu back to the original, and fixing of remaining known saving system bugs.
+
+### Changed
+- Changed: Replaced November 2023 3D main menu background with July 2022 parallax background.
+
+### Fixed
+- Fix: Load save -> From in-game -> Empire borders don't respawn.
+- Fix: Load save -> In-game -> Does not restore icons, etc.
+
+---
+
 ## 1.0.6 'META' [23.12.2023]
 > Fixing saving system bugs players encountered.
 
