@@ -2,6 +2,40 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.2.0 'META' [28.12.2023]
+> Backend simulated combat improvements, and animated combat fixes.
+
+### Added
+- Add: Solace ship builder -> Evasion stat into stats UI.
+- Add: Combat system -> Use Solace turrets to deal damage in the backend.
+- Add: Combat -> Min and max turret ranges.
+- Add: Combat -> Rate of fire per turret.
+- Add: Solace ship builder -> Rate of fire to turret stats.
+- Add: Pause menu -> Open credits button.
+
+### Improved
+- Improve: Ship Builder -> Turrets -> Should have stats on screen, instead of tooltip [for clarity].
+
+### Balanced
+- Balance: Colonist -> Reduced from `75` to `45` power cost on standard speed.
+
+### Fixed
+- Fix: Ship builder -> Background has tiling artifacts on ultrawide displays.
+- Fix: Solace ship builder -> When fleet types are unlocked, filter type UI does not update after opening the ship builder.
+- Fix: Pause menu -> 'New stars satellites' logo sometimes appeared duplicated.
+- Fix: Credits -> Credits username appears in broken font.
+- Fix: Solace ship builder -> Panels remain open when opened.
+- Fix: Starbase panel -> Upgrade button tooltip showed technological advance required when can upgrade starbase.
+- Fix: Pause menu -> Game settings info is not fully visible on ultrawide aspect ratio.
+
+### How Turret Ranges Currently Work
+- When combat is being observed, accurate turret ranges are used from the animated ship position, otherwise if a star system is not open, turret range is based on the center of the fleet.
+- This is because ship positions are not known by the server, only the client, as simulating positions on the server would be more difficult and require more CPU calls.
+
+> Note: This combat update requires more work such as bug fixes/balancing/playtesting, but is functional, so will first be pushed to the beta branch.
+
+---
+
 ## 1.1.0 'META' [23.12.2023]
 > Rebranding of main menu back to the original, and fixing of remaining known saving system bugs.
 
