@@ -641,7 +641,7 @@ Update will show '3.0.0b' because I forgot to update it.
 
 ---
 
-# 2.1.0b 'ARGON II' [2023.11.21]
+## 2.1.0b 'ARGON II' [2023.11.21]
 
 ### Added
 - Add: Ubiquity -> Pulsar prefab with emissions VFX.
