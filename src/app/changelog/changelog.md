@@ -2,6 +2,25 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.2.1 'META' [29.12.2023]
+> Bug fixes, especially with the main menu.
+
+### Fixed
+- Fix: Skyboxes -> Appear lower quality on build due to unnecessary mip maps.
+- Fix: Main menu -> Origin selection -> Origin description text is not legible enough, requiring cybernetic eyesight to read.
+- Fix: Main menu -> Selecting empire icon and hovering over other input breaks preview icon.
+- Fix: Pause menu -> Game settings were not applied correctly.
+- Fix: Battle -> Retreat -> Does not work with new combat system.
+- Fix: Start game -> Does not start with gunboat.
+- Fix: Main menu -> Play -> Huge memory usage on 4K resolutions.
+- Fix: Open galaxy map -> Borders initially do not have correct colours.
+- Fix: Fleet -> Starter ships don't match preset ships.
+
+### Removed
+- Remove: Main menu -> Ubiquity inspector -> Replaced 3D planet models with images of planet surface as it caused memory issues.
+
+---
+
 ## 1.2.0 'META' [28.12.2023]
 > Backend simulated combat improvements, and animated combat fixes.
 
