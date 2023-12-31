@@ -2,6 +2,23 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.2.2 'META' [31.12.2023]
+> The last update of 2023, focusing mainly on ship fixes.
+
+### Fixed
+- Fix: Solace ship builder -> Simulate combat -> Turrets do not shoot.
+- Fix: Solace ship builder -> Simulate combat -> Turrets continue firing when the target is out of range.
+- Fix: Solace ship builder -> Combat mode -> Turrets fire at rapid speed when engaged.
+- Fix: Ubiquity -> Combat -> Ship continues to shoot when paused (shooting ignores time scale).
+
+### Improved
+- Improve: Solace ship builder -> Use gradient skybox instead of image background.
+- Improve: Solace ship builder -> Add text to indicate turret range.
+- Improve: Solace ship builder -> Target should move in and out to engage turrets at different ranges.
+- Improve: Fog of war (FOW) -> Restore previous smooth fog of war (as shown in early-access post cover screenshot).
+
+---
+
 ## 1.2.1 'META' [29.12.2023]
 > Bug fixes, especially with the main menu.
 
