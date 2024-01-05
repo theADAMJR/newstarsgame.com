@@ -2,6 +2,19 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.2.4 'META' [05.01.2024]
+> Hotfix for colony siege not triggering, and some other fixes.
+
+### Fixed
+- Fix: Colony -> Siege -> Colony siege is sometimes not triggered [due to an issue with new fleet stats].
+    - This bug appeared after the previous update which modified siege calculations.
+- Fix: Ubiquity -> Fleet -> After opening a system, fleets initially don't appear in fleet formation and appear inside each other.
+- Fix: Load save -> From in-game -> Fog of war duplicates and is not cleaned up [behind the scenes] when loading a save, which may cause memory issues.
+- Fix: Load save -> Sometimes shows galactic core is visible at first in the initial star system.
+- Fix: Load save -> From in-game -> Empire borders are not cleaned up [behind the scenes] when loading a save, which may cause memory issues.
+
+---
+
 ## 1.2.3 'META' [05.12.2024]
 > The first update of 2024. A step towards making the game stable.
 
