@@ -2,6 +2,24 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.2.3 'META' [05.12.2024]
+> The first update of 2024. A step towards making the game stable.
+
+### Fixed
+- Fix: Endgame screen -> Does not auto-pause time and allows controlling time while open.
+- Fix: Endgame screen -> Scrollbar does not work and appears duplicated.
+- Fix: Colony siege -> If nobody is enforcing siege, it should auto reduce.
+- Fix: Solace ship builder -> Opens with the previous ship that was loaded automatically instead of unlocked preset.
+- Fix: Colony panel -> Build queue is not visible when viewing an unoccupied enemy colony, when the starbase is occupied by self.
+- Fix: Colony siege -> Civilian ships should not progress siege.
+    - Siege progress is now determined by base damage, as opposed to ship strength.
+- Fix: Cross-scene -> Music button -> Tooltip starts off as empty.
+
+### Improved
+- Improve: Diplomacy panel -> Agreements -> Show if we grant the other empire border access.
+
+---
+
 ## 1.2.2 'META' [31.12.2023]
 > The last update of 2023, focusing mainly on ship fixes.
 
