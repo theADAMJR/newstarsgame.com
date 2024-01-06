@@ -2,12 +2,6 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-## Unreleased
-
-[3] fix: xeno exterminator -> raze colony -> multiple raze orders can be queued
-
----
-
 ## 1.2.4 'META' [05.01.2024]
 > Hotfix for colony siege not triggering, and some other fixes.
 
