@@ -2,6 +2,12 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## Unreleased
+
+[3] fix: xeno exterminator -> raze colony -> multiple raze orders can be queued
+
+---
+
 ## 1.2.4 'META' [05.01.2024]
 > Hotfix for colony siege not triggering, and some other fixes.
 
@@ -18,6 +24,9 @@
 ## 1.2.3 'META' [05.12.2024]
 > The first update of 2024. A step towards making the game stable.
 
+### Improved
+- Improve: Diplomacy panel -> Agreements -> Show if we grant the other empire border access.
+
 ### Fixed
 - Fix: Endgame screen -> Does not auto-pause time and allows controlling time while open.
 - Fix: Endgame screen -> Scrollbar does not work and appears duplicated.
@@ -27,9 +36,6 @@
 - Fix: Colony siege -> Civilian ships should not progress siege.
     - Siege progress is now determined by base damage, as opposed to ship strength.
 - Fix: Cross-scene -> Music button -> Tooltip starts off as empty.
-
-### Improved
-- Improve: Diplomacy panel -> Agreements -> Show if we grant the other empire border access.
 
 ---
 
