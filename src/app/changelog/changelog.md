@@ -3,7 +3,7 @@
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
 ## 1.3.0 'META' [12.01.2024]
-> Total redesign of ship movement, and rescaling of ubiquity star systems.
+> Total redesign of ship movement, and rescaling of ubiquity star systems, focusing on fixing pathfinding bugs.
 
 ### Fixed
 - Fix: Ubiquity -> Ships often get stuck around planets, or struggle to move around them, especially during battles.
