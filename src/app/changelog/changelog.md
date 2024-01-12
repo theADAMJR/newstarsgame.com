@@ -2,6 +2,33 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.3.0 'META' [12.01.2024]
+> Total redesign of ship movement, and rescaling of ubiquity star systems.
+
+### Fixed
+- Fix: Ubiquity -> Ships often get stuck around planets, or struggle to move around them, especially during battles.
+- Fix: Loading screen -> Some text appears to overflow their backgrounds.
+- Fix: Combat system -> Ships collide with each other in combat.
+- Fix: Combat -> Ships from the enemy side can randomly join the wrong side in battle.
+- Fix: Ubiquity -> Space squids -> Beelines into planet roundabouts (so does fleet ubi position).
+- Fix: Xeno Exterminator -> Raze Colony -> Multiple raze orders can be queued.
+
+### Tweaked
+- Tweak: Ubiquity -> Systems now always spawn at 0,0 instead of at a slight offset.
+
+### Changed
+- Change: Ubiquity -> Reduced size of star systems by 10x [technological limitations of Unity and navmesh generation].
+    - Nav meshes covered only around 10% of the original system size, which is a hard-coded limitation that took me 5 hours straight to figure out.
+- Change: Ubiquity -> Starbases of unknown players no longer have empty HUDs.
+
+## Note
+> Following the post-release updates, there is a need for more careful and slower updates, like this one, deployed to the beta branch first.
+> This update was delayed by a few days, since it was a huge rework and introduced many bugs that were internally fixed [20+ internally fixed bugs are omitted from the changelog].
+
+*This will likely introduce some bugs I have not found, so the update will be deployed on the beta branch first to gather feedback. Sometimes a step backwards is required to take 2 steps forward.*
+
+---
+
 ## 1.2.4 'META' [05.01.2024]
 > Hotfix for colony siege not triggering, and some other fixes.
 
