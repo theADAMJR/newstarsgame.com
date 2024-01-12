@@ -9,7 +9,6 @@
 - Fix: Ubiquity -> Ships often get stuck around planets, or struggle to move around them, especially during battles.
 - Fix: Loading screen -> Some text appears to overflow their backgrounds.
 - Fix: Combat system -> Ships collide with each other in combat.
-- Fix: Combat -> Ships from the enemy side can randomly join the wrong side in battle.
 - Fix: Ubiquity -> Space squids -> Beelines into planet roundabouts (so does fleet ubi position).
 - Fix: Xeno Exterminator -> Raze Colony -> Multiple raze orders can be queued.
 
@@ -17,8 +16,7 @@
 - Tweak: Ubiquity -> Systems now always spawn at 0,0 instead of at a slight offset.
 
 ### Changed
-- Change: Ubiquity -> Reduced size of star systems by 10x [technological limitations of Unity and navmesh generation].
-    - Nav meshes covered only around 10% of the original system size, which is a hard-coded limitation that took me 5 hours straight to figure out.
+- Change: Ubiquity -> Reduced size of star systems by 10x [due to limitations with new pathfinding system].
 - Change: Ubiquity -> Starbases of unknown players no longer have empty HUDs.
 
 ## Note
