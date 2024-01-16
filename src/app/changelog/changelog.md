@@ -2,7 +2,19 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-## 1.3.0 'META' [12.01.2024]
+## 1.3.1 'META' [16.01.2024]
+> Experimenting with running monthly calculations on multiple threads, to reduce lag spikes.
+
+### Fixed
+- Fix: Pop manager -> Population of clans does not increase.
+- Fix: Ubiquity -> Opening a system is very laggy from new ship pathfinding.
+
+### Optimized
+- Optimize: Pop manager -> Reworked to use multithreading for colony population calculations, which should slightly reduce monthly update lag.
+
+---
+
+## 1.3.0-prerelease 'META' [12.01.2024]
 > Total redesign of ship movement, and rescaling of ubiquity star systems, focusing on fixing pathfinding bugs.
 
 ### Fixed
