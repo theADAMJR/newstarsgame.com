@@ -2,7 +2,7 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-## 1.3.1 'META' [16.01.2024]
+## 1.3.1 'META' [17.01.2024]
 > Experimenting with running monthly calculations on multiple threads, to reduce lag spikes.
 
 ### Fixed
