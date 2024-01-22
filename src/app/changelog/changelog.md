@@ -14,7 +14,7 @@
 ### Optimized
 - Optimize: Resource Manager -> Reworked to use multithreading for most monthly resource calculations.
 - Optimize: Pathfinding -> Reworked to use multithreading for calculating routes, to reduce lag spikes.
-- Optimize: Fleet -> Fleets should no longer have large lag spikes when moved long distances (on modern CPUs).
+- Optimize: Fleet -> Fleets should no longer have large lag spikes when moved (on modern CPUs).
 - Optimize: Pathfinding -> Convert to Burst compiled code.
 - Optimize: Properly implement unreachable routes with pathfinding.
 
