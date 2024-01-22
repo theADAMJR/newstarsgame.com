@@ -21,7 +21,7 @@
 - Fix: Ubiquity -> Regular starbase labels appear huge.
 
 ### Changed
-- Change: Resource Manager -> Space entity players no longer have resource calculations.
+- Change: Resource Manager -> Space entity players no longer have resource calculations, reducing lag.
 - Change: Map Generator -> Star counts for each map size are now `100`, `150`, `200`, `250`, `300` instead of `100`, `200`, `300`, `400`, `500` for new games.
   - 400-500 stars is impractically large.
   - Double the smallest map size is too large of an increment.
