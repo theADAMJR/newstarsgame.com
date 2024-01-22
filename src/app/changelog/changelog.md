@@ -2,12 +2,47 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.4.0-prerelease 'META' [22.01.2024]
+> More optimizations, new galaxy sizes, and provisional removal of half-added features.
+
+### Added
+- Add: Map -> Duel 50 stars galaxy (multiplayer).
+  - With option to select 'Duel' map size from main menu.
+- Add: Create Map -> Option to select duel stars galaxy map.
+- Add: Create Map -> Recommended settings for duel stars galaxy map such as player count etc.
+
+### Optimized
+- Optimize: Resource Manager -> Reworked to use multithreading for most monthly resource calculations.
+- Optimize: Pathfinding -> Reworked to use multithreading for calculating routes, to reduce lag spikes.
+- Optimize: Fleet -> Fleets should no longer have large lag spikes when moved long distances (on modern CPUs).
+- Optimize: Pathfinding -> Convert to Burst compiled code.
+- Optimize: Properly implement unreachable routes with pathfinding.
+
+### Fixed
+- Fix: Start Game -> Does not open Ubiquity and spawns in the center of galaxy.
+- Fix: Ubiquity -> Regular starbase labels appear huge.
+
+### Changed
+- Change: Resource Manager -> Space entity players no longer have resource calculations.
+- Change: Map Generator -> Star counts for each map size are now `100`, `150`, `200`, `250`, `300` instead of `100`, `200`, `300`, `400`, `500` for new games.
+  - 400-500 stars is impractically large.
+  - Double the smallest map size is too large of an increment.
+  - Galaxy visuals were generally poor on map sizes of >300 stars.
+  - Loading saves from old map sizes has been tested to work as normal.
+
+### Removed
+- Remove: Celestial Squid -> No longer spawns in galaxy, because it is currently too broken.
+  - The celestial squid may appear again when more bug fixes and polishes have been done.
+- Remove: Blue galaxy smoke from gold galaxy.
+
+---
+
 ## 1.3.1 'META' [17.01.2024]
 > Experimenting with running monthly calculations on multiple threads, to reduce lag spikes.
 
 ### Fixed
 - Fix: Pop manager -> Population of clans does not increase.
-- Fix: Ubiquity -> Opening a system is very laggy from new ship pathfinding.
+- Fix: Ubiquity -> Opening a system is very laggy from new ship pathfinding system.
 
 ### Optimized
 - Optimize: Pop manager -> Reworked to use multithreading for colony population calculations, which should slightly reduce monthly update lag.
