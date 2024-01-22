@@ -7,7 +7,6 @@
 
 ### Added
 - Add: Map -> Map -> Duel map size - 50 stars galaxy.
-  - With option to select 'Duel' map size from main menu.
 - Add: Create Map -> Option to select duel stars galaxy map.
 - Add: Create Map -> Recommended settings for duel stars galaxy map such as player count etc.
 
