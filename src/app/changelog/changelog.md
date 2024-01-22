@@ -15,8 +15,6 @@
 - Optimize: Resource Manager -> Reworked to use multithreading for most monthly resource calculations.
 - Optimize: Pathfinding -> Reworked to use multithreading for calculating routes, to reduce lag spikes.
 - Optimize: Fleet -> Eliminated large lag spikes when moving fleets (on modern CPUs).
-- Optimize: Pathfinding -> Convert to Burst compiled code.
-- Optimize: Properly implement unreachable routes with pathfinding.
 
 ### Fixed
 - Fix: Start Game -> Does not open Ubiquity and spawns in the center of galaxy.
