@@ -2,6 +2,11 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.4.0 'META' [25.01.2024]
+> Pushing previous beta update to all users.
+
+---
+
 ## 1.4.0-prerelease 'META' [22.01.2024]
 > More optimizations, new galaxy sizes, and provisional removal of half-added features.
 
