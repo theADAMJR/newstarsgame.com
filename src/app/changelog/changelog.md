@@ -9,7 +9,7 @@
 - Optimize: Saving System -> Parallel optimization for saving, eliminating lag spikes from saving/auto-saving.
 - Optimize: AI -> Parallel optimization for AI starbase, and diplomacy handling.
   - Diplomacy handling was the laggiest part of the AI.
-  - Foundation added for adding multithreading for the rest of the AI.
+  - Foundation added for further AI optimization.
   - There should now be a noticable reduction in monthly lag spikes.
 - Optimize: Events -> Some non-critical events are no longer received, especially when the player is not involved, preventing lag.
   - Updates affected include: relations changed, colony orders, starbase orders, and fleet orders.
