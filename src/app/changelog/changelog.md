@@ -2,6 +2,46 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.5.0 'META' [09.02.2024]
+> Over 2 weeks in the making. Reduction in monthly lag spikes with parallel optimization for AI, and saving.
+
+### Optimized
+- Optimize: Saving System -> Parallel optimization for saving, eliminating lag spikes from saving/auto-saving.
+- Optimize: AI -> Parallel optimization for AI starbase, and diplomacy handling.
+  - Diplomacy handling was the laggiest part of the AI.
+  - Foundation added for adding multithreading for the rest of the AI.
+  - There should now be a noticable reduction in monthly lag spikes.
+- Optimize: Events -> Some non-critical events are no longer received, especially when the player is not involved, preventing lag.
+  - Updates affected include: relations changed, colony orders, starbase orders, and fleet orders.
+
+### Improved
+- Improve: Tooltip -> Right-click to toggle pin tooltips in place.
+
+### Fixed
+- Fix: Animated Combat -> Movement was too slow towards the target.
+- Fix: Animated Combat -> Temporarily workaround to allow random turrets to fire visually to fix turrets not appearing to fire when expected.
+- Fix: Ubiquity -> Ships spawn out of bounds, on saves before `v1.3.0`
+
+### Changed
+- Change: Colony -> Now uses ID of colony number, not parent system ID.
+
+### Tweaked
+- Tweak: Increase galaxy visuals scale for duel map size.
+- Tweak: Main Menu -> Scroll sensitivity of create empire/map increased.
+- Tweak: Camera -> Increase movement speed in ubiquity system by `1.5x`.
+
+### Balanced
+- Balance: Tech -> Repeatable starbase capacity techs now give `+2` instead of `+1` designation slots.
+- Balance: Occupation Cost -> Reduced base cost of occupation from `1` to `.5` per occupied starbase.
+
+## Behind the Scenes
+- Addition of e2e tests to improve stability.
+
+## Note
+- Save files before v1.3.0 (12th January 2024) previously have loaded fleets out of bounds, due to star system rescaling, but are now repositioned within the boundary.
+
+---
+
 ## 1.4.0 'META' [25.01.2024]
 > Pushing previous beta update to all users.
 
