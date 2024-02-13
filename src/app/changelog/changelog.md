@@ -2,6 +2,20 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.5.1 'META' [13.02.2024]
+> Bug fixes and optimizations.
+
+### Fixed
+- Fix: Resource Manager -> Occupation cost shows without occupying starbases.
+- Fix: Battle -> Retreat -> Sometimes retreats to systems with enemies in, meaning the battle continues.
+- Fix: Load Save -> Does not update resource count.
+- Fix: Agendas -> Opinion modification does result in correct values.
+
+### Optimized
+- Optimize: AI agendas and opinion calculations now use parallel processing.
+
+---
+
 ## 1.5.0 'META' [09.02.2024]
 > Over 2 weeks in the making. Reduction in monthly lag spikes with parallel optimization for AI, and saving.
 
