@@ -2,7 +2,12 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
-## 1.5.1 'META' [13.02.2024]
+## 1.5.1 'META' [14.02.2024]
+> Pushing previous beta update to all users.
+
+---
+
+## 1.5.1-prerelease 'META' [13.02.2024]
 > Bug fixes and optimizations.
 
 ### Fixed
