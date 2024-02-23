@@ -2,6 +2,18 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.6.0-prerelease 'META' [23.02.2024]
+> AI is now mostly multithreaded.
+
+### Optimized
+- Optimize: AI -> Military calculations now use parallel processing.
+- Optimize: AI -> Colony calculations now use parallel processing.
+
+### Tweaked
+- Tweak: Cooperative Militarist -> Join Wars -> Can invite to wars when the recipient has an open attitude with the enemy, instead of cautious.
+
+---
+
 ## 1.5.1 'META' [14.02.2024]
 > Pushing previous beta update to all users.
 
