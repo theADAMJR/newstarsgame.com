@@ -2,12 +2,21 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.6.1 'META' [26.02.2024]
+> Patch of crashing bug, and Ubiquity bug fixes.
+
+### Fixed
+- Fix: Starbase Panel -> Opening panel crashes game.
+- Fix: Ubiquity -> Initial Load -> Ship colours are incorrect on initial load.
+- Fix: Ubiquity -> Ship trails do not appear the first time a star system is being viewed.
+
+---
+
 ## 1.6.0-prerelease 'META' [23.02.2024]
 > AI is now mostly multithreaded.
 
 ### Optimized
-- Optimize: AI -> Military calculations now use parallel processing.
-- Optimize: AI -> Colony calculations now use parallel processing.
+- Optimize: AI -> Colony and military calculations now use parallel processing.
 
 ### Tweaked
 - Tweak: Cooperative Militarist -> Join Wars -> Can invite to wars when the recipient has an open attitude with the enemy, instead of cautious.
