@@ -3,7 +3,7 @@
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
 ## 1.6.2 'META' [29.02.2024]
-> Patch for inevitable combat bugs that were created from the pathfinding update system rescaling.
+> Patch for inevitable combat bugs that were created from the pathfinding rework star system rescaling.
 
 ### Improved
 - Improve: Ship Builder -> Toggling should re-open Ubiquity if Ubiquity was open.
