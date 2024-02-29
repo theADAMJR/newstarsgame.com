@@ -2,6 +2,20 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.6.2 'META' [29.02.2024]
+> Patch for inevitable combat bugs that were created from the pathfinding update system rescaling.
+
+### Improved
+- Improve: Ship Builder -> Toggling should re-open Ubiquity if Ubiquity was open.
+- Improve: Animated Combat -> Restore old burnout material that is less ugly.
+
+### Fixed
+- Fix: Interaction Manager -> Diplomacy Panel -> Clicking away does not close.
+- Fix: Ubiquity -> Solace turret ambience is sometimes heard during battle.
+- Fix: Animated Combat -> Explosion VFX not visible when ship is destroyed.
+
+---
+
 ## 1.6.1 'META' [26.02.2024]
 > Patch of crashing bug, and Ubiquity bug fixes.
 
