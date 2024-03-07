@@ -2,11 +2,26 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.6.3 'META' [07.03.2024]
+> Animated combat fixes.
+
+### Fixed
+- Fix: Fleet -> After battles, fleets sometimes enter FTL in the middle of systems.
+    -> When a fleet enters a battle, the order that was paused assumes the last position before the battle started, therefore ships appear to teleport out of nowhere, when resuming order, after battle ended.
+- Fix: Seamless VFX -> Meteor VFX spawns while viewing system or ship builder.
+- Fix: Ubiquity -> Animated Combat -> Projectile VFX is not scaled correctly.
+
+### Tweaked
+- Tweak: Combat System -> Increase pace of battles (damage effectiveness increased).
+- Tweak: Animated Combat -> Remove ship movement speed reduction during battles.
+
+---
+
 ## 1.6.2 'META' [29.02.2024]
 > Patch for inevitable combat bugs that were created from the pathfinding rework star system rescaling.
 
 ### Improved
-- Improve: Ship Builder -> Toggling should re-open Ubiquity if Ubiquity was open.
+- Improve: Ship Builder -> Toggling should re-open Ubiquity if it was previously open.
 - Improve: Animated Combat -> Restore old burnout material that is less ugly.
 
 ### Fixed
