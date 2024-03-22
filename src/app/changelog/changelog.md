@@ -12,7 +12,7 @@
 
 ### Note: 'GATEWAY' Update
 - The 'Meta' update mostly focused on multithreading monthly updates, and post early-access support.
-- This update will continue this, but largely focus on reducing daily lag spikes.
+- This update will continue this, but may largely focus on reducing daily lag spikes.
 - Development may be a lot slower during this period, due to external events, so it may take a few months longer to complete NS to a full release standard.
 
 ---
