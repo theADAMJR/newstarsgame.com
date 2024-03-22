@@ -2,6 +2,21 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.7.0 'GATEWAY' [22.03.2024]
+
+### Improved
+- Improve: Colony -> Add info to tooltip about migration for clarity.
+
+### Optimized
+- Optimize: Starbase Label HUD -> Should only update when siege progress changed, colony created, or month passed.
+
+### Note: 'GATEWAY' Update
+- The 'Meta' update mostly focused on multithreading monthly updates, and post early-access support.
+- This update will continue this, but largely focus on reducing daily lag spikes.
+- Development may be a lot slower during this period, due to external events, so it may take a few months longer to complete NS to a full release standard.
+
+---
+
 ## 1.6.3 'META' [07.03.2024]
 > Animated combat fixes.
 
