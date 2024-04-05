@@ -18,28 +18,10 @@ export default function Game() {
         productVersion: "0.1",
       }).then((unityInstance: any) => {
         console.log("Unity Instance Loaded");
-        
-        function resizeCanvas() {
-          const width = window.innerWidth;
-          const height = window.innerHeight;
-          const aspectRatio = 16 / 9; // Adjust based on your game's aspect ratio
-          let newWidth, newHeight;
-  
-          if (width / aspectRatio < height) {
-            newWidth = width;
-            newHeight = width / aspectRatio;
-          } else {
-            newWidth = height * aspectRatio;
-            newHeight = height;
-          }
-  
-          canvas.style.width = newWidth + 'px';
-          canvas.style.height = newHeight + 'px';
-        }
   
         // Call resizeCanvas on initial load and window resize
         window.addEventListener('resize', resizeCanvas);
-        resizeCanvas();
+        resizeCanvas(canvas);
       }).catch((error: any) => {
         console.error("Unity Instance Error: ", error);
       });
@@ -54,7 +36,28 @@ export default function Game() {
     }
 
     // Cleanup
-    return () => document.body.removeChild(script);
+    return () => {
+      return document.body.removeChild(script);
+      window.removeEventListener('resize', resizeCanvas); // Make sure to define resizeCanvas outside of the then() scope
+    };
+        
+    function resizeCanvas(canvas: any) {
+      const width = window.innerWidth;
+      const height = window.innerHeight;
+      const aspectRatio = 16 / 9; // Adjust based on your game's aspect ratio
+      let newWidth, newHeight;
+
+      if (width / aspectRatio < height) {
+        newWidth = width;
+        newHeight = width / aspectRatio;
+      } else {
+        newWidth = height * aspectRatio;
+        newHeight = height;
+      }
+
+      canvas.style.width = newWidth + 'px';
+      canvas.style.height = newHeight + 'px';
+    }
   }, []);
 
   return (
