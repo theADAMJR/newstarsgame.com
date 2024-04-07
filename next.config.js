@@ -1,15 +1,23 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
     trailingSlash: true,
-    output: 'export',
     distDir: 'build',
     webpack: (config) => {
-        config.module.rules.push({
-            test: /\.md$/,
-            use: 'raw-loader',
-        });
-        return config;
+      config.module.rules.push({
+        test: /\.md$/,
+        use: 'raw-loader',
+      });
+      return config;
     },
-}
-
-module.exports = nextConfig
+    async rewrites() {
+      return [
+        {
+          source: '/new_worlds',
+          destination: '/new_worlds/WebGL/index.html', // Points to public/new_worlds/WebGL/index.html
+        },
+      ];
+    },
+  };
+  
+  module.exports = nextConfig;
+  
