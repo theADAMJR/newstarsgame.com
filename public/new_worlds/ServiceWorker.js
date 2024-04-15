@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-New Worlds-0.1";
 const contentToCache = [
-    "Build/WebGL Fast.loader.js",
-    "Build/WebGL Fast.framework.js.unityweb",
-    "Build/WebGL Fast.data.unityweb",
-    "Build/WebGL Fast.wasm.unityweb",
+    "Build/WebGL Fastest.loader.js",
+    "Build/WebGL Fastest.framework.js.unityweb",
+    "Build/WebGL Fastest.data.unityweb",
+    "Build/WebGL Fastest.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
