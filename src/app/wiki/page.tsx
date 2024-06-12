@@ -1,5 +1,5 @@
 "use client";
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Sidebar, Menu, MenuItem, SubMenu, menuClasses, MenuItemStyles } from 'react-pro-sidebar';
 import { Switch } from '@/components/sidebar/Switch';
 import { SidebarHeader } from '@/components/sidebar/SidebarHeader';
@@ -15,6 +15,8 @@ import { SidebarFooter } from '@/components/sidebar/SidebarFooter';
 import { Badge } from '@/components/sidebar/Badge';
 import { Typography } from '@/components/sidebar/Typography';
 import { PackageBadges } from '@/components/sidebar/PackageBadges';
+import { marked } from 'marked';
+import './wiki.css';
 
 type Theme = 'light' | 'dark';
 
@@ -70,7 +72,7 @@ export default function Wiki(){
   const [broken, setBroken] = React.useState(false);
   const [rtl, setRtl] = React.useState(false);
   const [hasImage, setHasImage] = React.useState(false);
-  const [theme, setTheme] = React.useState<Theme>('light');
+  const [theme, setTheme] = React.useState<Theme>('dark');
 
   // handle on RTL change event
   const handleRTLChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -121,6 +123,19 @@ export default function Wiki(){
     }),
   };
 
+  useEffect(() => {
+    document.body.classList.remove('no-scroll');
+    return () => {
+      document.body.classList.add('no-scroll');
+    };
+  }, []);
+
+  const page = require('./markdown/introduction.md').default
+    .replace(/- ([A-Za-z \-,]+) ->/gm, "- **$1** ->")
+    .replace(/- ([A-Za-z \-,]+):/gm, "- **$1**:")
+    .replace(/    -> ([A-Za-z \-,]+) ->/gm, "    -> **$1** ->")
+    .replace(/    ->/gm, "    -");
+
   return (
     <div style={{ display: 'flex', height: '100vh', direction: rtl ? 'rtl' : 'ltr' }}>
       <Sidebar
@@ -128,7 +143,7 @@ export default function Wiki(){
         toggled={toggled}
         onBackdropClick={() => setToggled(false)}
         onBreakPoint={setBroken}
-        image="https://user-images.githubusercontent.com/25878302/144499035-2911184c-76d3-4611-86e7-bc4e8ff84ff5.jpg"
+        image="/img/Purple/Tile/Space Background.png"
         rtl={rtl}
         breakPoint="md"
         backgroundColor={hexToRgba(themes[theme].sidebar.backgroundColor, hasImage ? 0.9 : 1)}
@@ -214,7 +229,7 @@ export default function Wiki(){
       </Sidebar>
 
       <main>
-        <div style={{ padding: '16px 24px', color: '#44596e' }}>
+        <div style={{ padding: '16px 24px' }}>
           <div style={{ marginBottom: '16px' }}>
             {broken && (
               <button className="sb-button" onClick={() => setToggled(!toggled)}>
@@ -223,13 +238,9 @@ export default function Wiki(){
             )}
           </div>
           <div style={{ marginBottom: '48px' }}>
-            <Typography variant="h4" fontWeight={600}>
-              React Pro Sidebar
-            </Typography>
-            <Typography variant="body2">
-              React Pro Sidebar provides a set of components for creating high level and
-              customizable side navigation
-            </Typography>
+            <div
+                className='content'
+                dangerouslySetInnerHTML={{ __html: marked(page, { mangle: false, headerIds: false }) }} />
             <PackageBadges />
           </div>
 

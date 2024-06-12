@@ -50,10 +50,8 @@ export const SidebarHeader: React.FC<SidebarHeaderProps> = ({ children, rtl, ...
   return (
     <StyledSidebarHeader {...rest}>
       <div style={{ display: 'flex', alignItems: 'center' }}>
-        <StyledLogo rtl={rtl}>P</StyledLogo>
-        <Typography variant="subtitle1" fontWeight={700} color="#0098e5">
-          Pro Sidebar
-        </Typography>
+        <img src="/img/new-stars-icon-512x512.png" alt="" className="w-24" />
+        <h1 className='text-4xl'><div className="inline mr-5" /> New Stars</h1>
       </div>
     </StyledSidebarHeader>
   );

@@ -37,9 +37,6 @@ export default function Home() {
       </div>
 
       <div className="left">
-        <a href="https://game-icons.net/" target="_blank">&copy; Star satellites icon - by Lorc under CC-BY-3.0</a>
-
-
         <footer>
           <ul className="soc">
             <li>
