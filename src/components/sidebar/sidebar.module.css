@@ -1,0 +1,32 @@
+/* components/Sidebar.module.css */
+.sidebar {
+    /* Add your sidebar styles here */
+    width: 250px;
+    height: 100vh;
+    background-color: #333;
+    color: white;
+    transition: transform 0.3s ease;
+    transform: translateX(-250px);
+  }
+  
+  .sidebar.active {
+    transform: translateX(0);
+  }
+  
+  .sidebarToggle {
+    /* Add your button styles here */
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .sidebarContent {
+    padding: 20px;
+    /* Additional content styles */
+  }
+  
