@@ -15,8 +15,8 @@
 - Events -> New event batching system that supposedly makes events run more efficiently
 
 ### Fixed
-- Planet HUD -> Name text becomes grey in system that is being explored, making it hard to see
-- Planet HUD -> World indicator is not shown until planet is fully explored
+- Fix: Planet HUD -> Name text becomes grey in system that is being explored, making it hard to see
+- Fix: Planet HUD -> World indicator is not shown until planet is fully explored
 
 ---
 

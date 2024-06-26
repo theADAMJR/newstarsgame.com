@@ -1,15 +1,12 @@
-"use client"
+"use client";
 import { marked } from 'marked';
 import './changelog.css';
 import Navbar from '@/components/navbar';
 import { useEffect } from 'react';
 
-export const metadata = {
-  title: 'New Stars - Changelog',
-}
-
 export default function Home() {
   useEffect(() => {
+    document.title = 'New Stars - Changelog';
     document.body.classList.remove('no-scroll');
     return () => {
       document.body.classList.add('no-scroll');
