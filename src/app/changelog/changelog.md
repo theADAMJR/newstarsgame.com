@@ -2,6 +2,24 @@
 <!-- Copyright © 2023 adamjr. All rights reserved. -->
 <!-- Note: This changelog is a development preview and may not reflect the final state of the game. -->
 
+## 1.7.1 'GATEWAY' [26.06.2024]
+
+### Added
+- Add: Scroll Camera -> You can now move by hovering to corner of screen
+
+### Improved
+- Ubiquity -> Planet HUD -> World indicator shows colour of planet, rather than suitability for clarity
+- System Name Text -> Planet HUD -> World indicator shows colour of planet, rather than suitability for clarity
+
+### Optimized
+- Events -> New event batching system that supposedly makes events run more efficiently
+
+### Fixed
+- Planet HUD -> Name text becomes grey in system that is being explored, making it hard to see
+- Planet HUD -> World indicator is not shown until planet is fully explored
+
+---
+
 ## 1.7.0 'GATEWAY' [22.03.2024]
 
 ### Improved
