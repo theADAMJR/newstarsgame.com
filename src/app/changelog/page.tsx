@@ -25,6 +25,11 @@ export default function Home() {
 
       <header className='py-20 pt-40'>
         <h1 className='text-center'>New Stars - Changelog</h1>
+        <div className="w-1/3 mx-auto border-l-4 border-orange-500 text-orange-500 p-4" role="alert">
+          <p className="font-bold">This Page is Outdated</p>
+          <p>This changelog has been discontinued as of 16.07.2024, and is due to be replaced.</p>
+          <p>See the new changelog at <a href="https://wiki.newstarsgame.com/changelog">wiki.newstarsgame.com/changelog</a></p>
+        </div>
       </header>
 
       <div className='flex justify-center items-center'>
