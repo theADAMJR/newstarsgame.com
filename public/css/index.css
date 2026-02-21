@@ -46,20 +46,26 @@ body,
 
 #logo-container {
     position: absolute;
-    top: -175%;
+    top: -90%;
+    left: 40%;
+    transform: translateX(-55%);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 #logo {
-    top: -150%;
-    margin-bottom: -175px;
+    width: 500px;
+    height: auto;
+    order: 1;
+    max-width: 600px;
 }
 
 #icon {
     z-index: -1;
-    position: absolute;
-    width: 240px;
-    left: 30%;
-    top: 30%;
+    position: relative;
+    width: 156px;
+    order: -1;
 
     -webkit-animation: spin 69s linear infinite;
     -moz-animation: spin 69s linear infinite;
@@ -115,41 +121,14 @@ footer {
 
 .container {
     position: absolute;
-    transform: scale(.5);
     top: 50vh;
-    left: -10%;
-    right: 35vw;
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-    .container {
-        transform: scale(.6);
-        left: 0%;
-    }
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-    .container {
-        transform: scale(.8);
-        left: 15%;
-    }
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {}
-
-/* X-Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {}
-
-/* XX-Large devices (larger desktops, 1400px and up) */
-@media (min-width: 1400px) {
-    .container {
-        top: 55vh;
-        left: 33vw;
-        transform: scale(1);
-    }
+    left: 50%;
+    right: auto;
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transform: translate(-50%, -50%);
 }
 
 /* short screens */

@@ -23,7 +23,7 @@ export default function Home() {
       <section id="wishlist" className="container">
         <div id="logo-container">
           <img id="icon" src="/img/new-stars-icon-512x512.png" alt="New Stars Satellites Icon" />
-          <img id="logo" src="/img/logo-transparent.png" alt="New Stars Logo Transparent" />
+          <img id="logo" src="/img/NEW STARS 2 WITHOUT SHADOWS (cropped).png" alt="New Stars Logo Transparent" />
         </div>
         <iframe src="https://store.steampowered.com/widget/2231270/" frameBorder="0" width="646" height="190"></iframe>
       </section>
